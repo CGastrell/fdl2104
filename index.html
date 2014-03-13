@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Trivia JS</title>
+		<link rel="stylesheet" href="base.css">
+		<link rel="stylesheet" href="fdl2014.css">
+		<style>
+		</style>
+	</head>
+
+	<body>
+	<div id="mainContainer" class="absolute fullscreen">
+		<div id="map" class="absolute" style="width:480px;height:980px;top:100px;"></div>
+		<div id="statusBar" class="absolute" style="width:100%;height:100px;background-image:url(images/header.jpg);background-repeat:no-repeat;">
+			<p class="hiScore">Record: </p>
+		</div>
+		<div id="callToAction" class="splash absolute" style="width:1450px;height:988px;left:480px;top:100px;background-image:url(images/callToAction.jpg)">
+		</div>
+		<div id="guideSplash" class="splash absolute box">
+			Selecciona una provincia del mapa<br />
+			Suma al menos 2 estrellas para seguir avanzando
+		</div>
+		<div id="selectSplash" class="splash absolute" style="width:1450px;height:988px;left:480px;top:100px;background-image:url(images/selecciondeprov.jpg)">
+		</div>
+		<div id="triviaContainer" class="splash absolute fullscreen" style="background:rgba(0,0,0,0.5);">
+			
+		</div>
+	</div>
+
+			
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<script src="js/jquery.ui.widget.min.js"></script>
+		<script src="js/jquery.tap.js"></script>
+		<script src="js/TweenMax-1.11.5.min.js"></script>
+		<script src="js/store+json2.min.js"></script>
+		<script src="js/d3.v3.min.js"></script>
+
+		<script src="js/triviaJS.js"></script>
+		<script src="js/fdl.js"></script>
+		<script>
+		$(document).ready(function(){
+			var labels = {
+				hiScore: "Record del día: ",
+				title: "preparando preguntas...",
+				playerScore: "PUNTOS: ",
+				roundUpHeader: "Puntos",
+				roundUpQuestion: "Respuesta correcta:",
+				roundUpTimebonus: "Bonus por tiempo:",
+				roundUpSum: 'Total:',
+				responseOkText: "CORRECTO!",
+				responseFailText: "INCORRECTO!",
+				nextQuestion: 'Continuar',
+				chooseOption: 'Elegí tu respuesta...',
+				startGame: '',
+				newRecord: 'Record del Día!',
+				finalScore: 'Tu puntaje final es: ',
+				gameEnded: 'Cerrar'
+			};
+
+
+
+			$('#mainContainer').fdl({labels:labels});
+
+			// callToAction.click(function(e) {
+			// 	//aca va el zoom del mapa, ojo
+			// 	TweenMax.to(this,0.5,{autoAlpha:0});
+			// 	TweenMax.to(guideSplash,0.5,{autoAlpha:1,delay:0.25});
+			// });
+			// guideSplash.click(function(e) {
+			// 	TweenMax.to(this,0.5,{autoAlpha:0});
+			// 	//aca va el zoom del mapa, ojo
+			// 	TweenMax.to('svg',2,{scale:2,x:00,y:430,ease:Back.easeInOut});
+
+			// 	TweenMax.to(selectSplash,0.5,{autoAlpha:1,delay:1.5});
+			// 	$('#map').on('provinciaclicked', function(evt,provincia) {
+			// 		// console.log(provincia);
+			// 		// var prov = $('.provincia[data-index=');
+			// 		TweenMax.to(triviaContainer,0.5,{
+			// 			autoAlpha:1,
+			// 			onComplete: function(){
+			// 				var miniTrivia = $('<div id="trivia" />').appendTo(triviaContainer);
+			// 				miniTrivia.height('100%');
+			// 				miniTrivia.trivia({
+			// 					questionsFileUrl:'triviafile.json',
+			// 					questionsPerGame:3,
+			// 					scorePerQuestion: 1,
+			// 					useTemplate: false,
+			// 					error: function(evt, data) {
+			// 						console.log(data);
+			// 					},
+			// 					gameReady: function(evt, data) {
+			// 						data.instance.startGame();
+			// 					},
+			// 					gameRestart: function(evt, data) {
+			// 						TweenMax.to(triviaContainer,0.5,{autoAlpha:0, onComplete:function(){
+			// 							miniTrivia.trivia("destroy");
+			// 							triviaContainer.html("");
+			// 							console.log(data);
+			// 							var color = data.score > 1 ? '#2f2' : '#f00';
+			// 							TweenMax.to(provincia,1,{fill:color});
+			// 						}})
+			// 					},
+			// 					labels: labels
+			// 				});
+			// 			}
+			// 		});
+			// 	});
+			// });
+		})
+		</script>
+
+	</body>
+</html>

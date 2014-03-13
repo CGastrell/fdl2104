@@ -1,0 +1,371 @@
+#gameSpace div, #gameSpace p {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+#gameSpace {
+  font-size: 5vh;
+}
+#gameSpace {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #222;
+}
+#hiScoreBox{
+  position:absolute;
+  text-align: right;
+  top: 2%;
+  color:white;
+  font-size: 75%;
+  left: 70%;
+}
+
+#hiScore{
+  color: yellow;
+}
+
+#startSplash, #endSplash {
+  position: absolute;
+  width: 50%;
+  /*height: 50%;*/
+  top: 25%;
+  left: 25%;
+  text-rendering: optimizelegibility;
+  color: white;
+  text-align: center;
+  background-color: orange;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+#questionBadge {
+  position: absolute;
+  left: 45%;
+  top: 2%;
+  color: white;
+  font-size: 1em;
+  text-rendering: optimizelegibility;
+  text-align: center;
+  border-radius: 5vw;
+  background-color: #111;
+  padding: 2vw;
+}
+
+#questionBox {
+  position: absolute;
+  margin-top: 12vh;
+  text-rendering: optimizelegibility;
+  color: white;
+  line-height: 4vw;
+  text-align: center;
+  background-color: grey;
+  border: 1px solid rgba(255,255,255,0.2);
+  pointer-events: none;
+}
+#responseSplash {
+  position: absolute;
+  margin-top: 12vh;
+  text-rendering: optimizelegibility;
+  color: white;
+  line-height: 4vw;
+  text-align: center;
+  background-color: grey;
+  width: 100%;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+#responseSplash > p.result {
+  font-size: 3vw;
+  line-height: 3.5vw;
+}
+
+#responseSplash > p.resultTip {
+  font-size: 1.5vw;
+  line-height: 1.8vw;
+  margin: 0 10%;
+}
+
+#questionBox > #question {
+  font-size: 4vw;
+  font-weight: normal;
+  text-rendering: optimizelegibility;
+  padding: 10px;
+  line-height: 4.5vw;
+  text-align: center;
+}
+#option1,#option2,#option3 {
+  position: absolute;
+  width: 25%;
+  top: 68vh;
+  color: white;
+  background-color: grey;
+  text-align: center;
+  border-radius: 5px;
+}
+#option1 {left: 6%;}
+#option2 {left: 37%;}
+#option3 {left: 68%;}
+
+#responseSplash .roundUp {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.roundUp .roundUpLabelQuestion {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
+.roundUp .roundUpScoreQuestion {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+}
+.roundUp .roundUpLabelTimebonus {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
+.roundUp .roundUpScoreTimebonus {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+}
+.roundUp .roundUpLabelSum {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
+.roundUp .roundUpScoreSum {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+}
+/*
+.calificacion {
+  pointer-events: none;
+}
+
+
+.remate {
+  pointer-events: none;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: x-large;
+  line-height: normal;
+}
+
+.cta {
+  height: 7.2vw;
+  min-width:10vw;
+  max-width: 40vw;
+  margin-left: auto;
+  margin-right:auto;
+  pointer-events: none;
+}
+
+.cta .centro {
+  background:whitesmoke;
+  height: 7.2vw;
+  margin-left: 7.1vw;
+  margin-right: 7.2vw;
+  text-align: center;
+  border-top: 1 solid white;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2) inset;
+  border-radius: 5px;
+  min-width: 10vw;
+  max-width: 30vw;
+}
+p.nextLabel, p.chooseOptionLabel, p.startLabel, p.newHiScoreLabel {
+  color:rgba(145, 42, 136, 1);
+  padding: 2vw 0;
+  font-size:3vw;
+  line-height: 3.5vw;
+}
+
+.cta .izq {
+  background-image: url(images/ribeted.png);
+  background-position:0 3px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 7.2vw;
+  height: 7.2vw;
+  float: left; 
+}
+
+.cta .der {
+  background-image:url(images/ribetei.png);
+  background-position:0 3px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 7.2vw;
+  height: 7.2vw;
+  float: right;
+  margin-top:-7.2vw;
+}
+
+
+#responseSplash {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+  text-rendering: optimizelegibility;
+  color: rgb(231, 247, 255);
+  padding: 10px;
+  line-height: 1.2vw;
+  text-transform: none;
+  text-shadow:0 5px 5px rgba(0,0,0,0.4);
+  text-align: center;
+  margin-top: 4vw;
+  border:1px solid rgba(0,0,0,0.3);
+  box-shadow:0 5px 5px rgba(0,0,0,0.4), inset 0 12px 10px -4.5px rgba(0,0,0,0.2);
+  background-color: rgba(145, 42, 136, 0.5);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-left: none;
+  border-right: none;
+  padding: 2%;
+}
+#startSplash .title{
+  font-family: 'Rye', cursive;
+  font-size: 7vw;
+  margin: 3vw 0;
+}
+ #responseSplash .result {
+  font-family: 'Rye', cursive;
+  font-size: 4vw;
+}
+.respuesta {
+  position: absolute;
+  top: 67%;
+  width: 25%;
+}
+
+.respuesta .opciones {
+  padding: 5%;
+  border:1px solid rgba(0,0,0,0.3);
+  box-shadow:0 5px 5px rgba(0,0,0,0.4), inset 0  12px 10px -4.5px rgba(0,0,0,0.5);
+  background-color: rgba(145, 42, 136, 0.5);
+  border: 1px solid rgba(255,255,255,0.2);
+  text-align: center;
+}
+
+.opciones > p {
+    font-size: 2vw;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    text-rendering: optimizelegibility;
+    color: white;
+    padding: 0 10px 10px;
+    line-height: 2.5vw;
+    text-transform: none;
+    text-shadow:0 7px 5px rgba(0,0,0,0.4);
+    margin: 0;
+}
+.opciones .boton {
+  background: url(images/boton.png) 0 0 no-repeat;
+  background-size: 100%;
+  width: 8vw;
+  height: 8vw;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1%;
+}
+
+
+
+
+#errorSplash {
+  border: 2px solid yellow;
+  position: absolute;
+  background: red;
+  width: 50%;
+  height: 50%;
+  text-align': center;
+  font-size': 20px;
+  color: white;
+
+}
+
+.roundUp {
+  width: 30%;
+  margin: 30px auto;
+}
+.roundUpLabelQuestion{ 
+  text-align: left;
+  width:55%;
+  float:left;
+ font-size: 1vw;}
+.roundUpScoreQuestion{
+  width:45%;
+  float:right;
+  text-align:right;
+  font-family: 'Rye', cursive;
+  font-size: 2vw;
+  margin-bottom:1vw; }
+
+.roundUpLabelTimebonus{
+  text-align: left;
+  width:55%;
+  float:left;
+ font-size: 1vw;
+
+  margin-bottom:1vw;}
+.roundUpScoreTimebonus{
+  width:45%;
+  float:right;
+  text-align:right;
+  font-family: 'Rye', cursive;
+  font-size: 2vw;
+  margin-bottom:1vw;}
+
+.roundUpLabelSum{
+  text-align: left;
+  width:55%;
+  float:left;
+ font-size: 1vw;
+
+  margin-bottom:1vw;}
+.roundUpScoreSum{
+  width:45%;
+  float:right;
+  text-align:right;
+  font-family: 'Rye', cursive;
+  font-size: 2vw;}
+
+.finalScoreLabel{
+  font-size: 3vw;
+  margin-bottom:3vw;
+}
+.finalScore{
+  font-family: 'Rye', cursive;
+  font-size: 4vw;
+  margin-bottom:2vw;
+}
+#newHiScoreBadge .label{
+  font-family: 'Rye', cursive;
+}
+
+.resultTip{ 
+  font-size:1.5vw;
+  line-height: 1.8vw;
+  max-width: 70%;
+margin-right: auto;
+margin-left: auto;}
+
+
+#bg{
+  width: 100%;
+  min-height: 100%;
+  background: url(images/bg.png) repeat;
+  background-size: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 0px 4px white inset ;
+}
+*/
