@@ -6,6 +6,7 @@
 		roundPoints: 0,
 		questionStartTime: 0,
 		questionEndTime: 0,
+		tweenRoot: null,
 		options: {
 			useTemplate: true,
 			useStore: true,
@@ -13,9 +14,12 @@
 			hiScore: "000000",
 			scorePerQuestion: 5000,
 			secondsPerQuestion: 10,
+			timeBonus: true,
 			questionsPerGame: 10,
 			questionsArrayName: 'questions',
 			questionsFileUrl: "",
+			mindTheHiScore: true,
+			startingPoints: "0",
 			labels: {
 				hiScore: "Hi Score: ",
 				title: "Trivia JS",
@@ -78,7 +82,7 @@
 		},
 		startGame: function() {
 			this.roundQuestions = [];
-			this.preguntaActual = null;
+			this.currentQuestion = null;
 			this.roundPoints = 0;
 			var _this  = this;
 			var q = this.options.questions.slice();
@@ -88,7 +92,7 @@
 				this.roundQuestions.push(q.splice(r,1)[0]);
 			}
 			this._trigger('gameStarted',null,{questions:this.roundQuestions,instance:this});
-			TweenMax.to(this.startSplash,0.5,{
+			this.tweenRoot = TweenMax.to(this.startSplash,0.5,{
 				autoAlpha:0,
 				scale:0.1,
 				ease: Back.easeIn,
@@ -111,37 +115,9 @@
 			tl.add(
 				TweenMax.to(this.endSplash,0.25,{autoAlpha:1})
 			);
-			if(this.roundPoints > this.options.hiScore) {
-				//new record!
-				if(this.options.useStore) {
-					store.set('hiScore',this.roundPoints);
-				}
-				TweenMax.set(this.newRecordBadge,{autoAlpha:1});
-				tl.add(
-					TweenMax.to(score,3,{
-						points: this.roundPoints,
-						onUpdate: function() {
-							finalScore.text( score.points << 0);
-							recordScore.text( score.points << 0);
-						}
-					}),"+=1"
-				);
-				tl.add(
-					TweenMax.from(this.newRecordBadge,1,{
-						autoAlpha: 0,
-						scale: 0.2,
-						ease: Elastic.easeOut
-					}),"-=2"
-				);
-			}else{
-				tl.add(
-					TweenMax.to(score,3,{
-						points: this.roundPoints,
-						onUpdate: function() {
-							finalScore.text( score.points << 0);
-						}
-					})
-				);
+			for(var ii = 0;ii < this.roundPoints;ii++) {
+				tl.set("#estrellaFinal"+(ii+1),{scale:4,transformOrigin:"center center"});
+				tl.to("#estrellaFinal"+(ii+1),0.5,{scale:1,autoAlpha:1,ease:Back.easeOut});
 			}
 		},
 		_showQuestion: function() {
@@ -151,94 +127,101 @@
 			}
 			var _this = this;
 			var rr = Math.random() * this.roundQuestions.length << 0;
-			this.preguntaActual = this.roundQuestions.splice(rr, 1)[0];
+			this.currentQuestion = this.roundQuestions.splice(rr, 1)[0];
 			
-			TweenMax.set([
-				this.questionBadge,
-				this.option1,
-				this.option2,
-				this.option3
-			], {autoAlpha: 1, scale: 1});
+			// TweenMax.set([
+			// 	this.questionBadge,
+			// 	this.option1,
+			// 	this.option2,
+			// 	this.option3
+			// ], {autoAlpha: 1, scale: 1});
 
-			var respuestas = this._shuffleArray(this.preguntaActual.options);
+			var respuestas = this._shuffleArray(this.currentQuestion.options);
 
-			this.option1.find('p').first().text(respuestas[0]);
-			this.option2.find('p').first().text(respuestas[1]);
-			this.option3.find('p').first().text(respuestas[2]);
+			this.option1.find('p').first().html(respuestas[0]);
+			this.option2.find('p').first().html(respuestas[1]);
+			this.option3.find('p').first().html(respuestas[2]);
 
-			this.questionBadge.text("#" + String(_this.options.questionsPerGame - _this.roundQuestions.length));
+			this.questionBadge.html("#" + String(_this.options.questionsPerGame - _this.roundQuestions.length));
 
-			this.questionBox.find('#question').first().text(this.preguntaActual.question);
-			//all set, trigger!
-			this._trigger('beforeShowQuestion',null,{question:this.preguntaActual,instance:this});
-			var responder = function() {
-				_this._processResponse($(this).find('p').first().text());
+			TweenMax.set($('#miniEstrella1',this.scoreBox),{autoAlpha:this.roundPoints > 0 ? 1 : 0});
+			TweenMax.set($('#miniEstrella2',this.scoreBox),{autoAlpha:this.roundPoints > 1 ? 1 : 0});
+			//este caso nunca se da... :(
+			TweenMax.set($('#miniEstrella3',this.scoreBox),{autoAlpha:this.roundPoints > 2 ? 1 : 0});
+
+			this.questionBox.find('#question').first().html(this.currentQuestion.question);
+			var handleAnswer = function() {
+				_this._processResponse($(this).find('p').first().html());
 			}
 			var hookRespuestas = function() {
-				_this.option1.on('click', responder);
-				_this.option2.on('click', responder);
-				_this.option3.on('click', responder);
+				_this._trigger('afterShowQuestion',null,{question:this.currentQuestion,instance:_this});
+				_this.option1.on('click', handleAnswer);
+				_this.option2.on('click', handleAnswer);
+				_this.option3.on('click', handleAnswer);
 				_this.questionStartTime = new Date();
-				_this._trigger('afterShowQuestion',null,{question:this.preguntaActual,instance:_this});
 			}
+			//all set, trigger!
+			this._trigger('beforeShowQuestion',null,{question:this.currentQuestion,instance:this});
 
 			var tl = new TimelineMax({onComplete:hookRespuestas});
-			tl.add(TweenMax.from(this.questionBadge, 1, {delay: 0.25, autoAlpha: 0, scale:3, ease: Power4.easeIn}));
-			// tl.add(TweenMax.to(this.background,0.5,{
-			// 	yoyo:true,
-			// 	repeat:1,
-			// 	autoAlpha:0,
-			// 	onStart: function(){
-			// 		$('<img />').attr('src','images/fondos/'+_this.preguntaActual.id + '.jpg');
-			// 	},
-			// 	onRepeat: function(){
-			// 		_this.background.attr('src', 'images/fondos/'+_this.preguntaActual.id + '.jpg');
-			// 	}
-			// }));
-			tl.add(TweenMax.to(this.questionBox,0.75,{delay: 0, autoAlpha:1}));
+			tl.set([
+				this.option1,
+				this.option2,
+				this.option3,
+				this.questionBox,
+				this.scoreBox
+			],{autoAlpha:1,scale:1,transformOrigin:"top center"});
+			// tl.add(TweenMax.from(this.questionBadge, 1, {delay: 0.25, autoAlpha: 0, scale:3, ease: Power4.easeIn}));
+			tl.add(TweenMax.from(this.questionBox,0.75,{autoAlpha:0,rotationX: -90, ease:Elastic.easeOut}));
 			tl.add(
 				TweenMax.staggerFrom(
 					[
 						this.option1,
 						this.option2,
-						this.option3
+						this.option3,
+						this.scoreBox
 					],
-					0.25,
-					{autoAlpha: 0,scale:0.2,ease: Back.easeOut, delay:1},
+					0.75,
+					{autoAlpha:0, rotationX: -90,ease: Elastic.easeOut, delay:1.5},
+					// {autoAlpha: 0,scale:0.2,ease: Back.easeOut, delay:1},
 					0.15
 				)
 			);
+			this.tweenRoot = tl;
 		},
-		_showRoundUpSplash: function(questionPoints, timePoints) {
+		_showRoundUpSplash: function(questionPoints, timePoints, customCaption) {
 			var _this = this;
-			this.responseSplash.find('p.result').first().text(questionPoints > 0 ? this.options.labels.responseOkText : this.options.labels.responseFailText);
-			this.responseSplash.find('p.resultTip').first().text(this.preguntaActual.answerTip);
+			var caption = questionPoints > 0 ? this.options.labels.responseOkText : this.options.labels.responseFailText;
+			var startingPoints = this.options.startingPoints;
+			caption = customCaption || caption;
+			this.responseSplash.find('p.result').first().html(caption);
+			this.responseSplash.find('p.resultTip').first().html(this.currentQuestion.answerTip);
 
-			var roundUpLabelQuestion = $('.roundUpLabelQuestion', this.roundUpDiv);
-			var roundUpLabelTimebonus = $('.roundUpLabelTimebonus', this.roundUpDiv);
-			var roundUpScoreTimebonus = $('.roundUpScoreTimebonus', this.roundUpDiv);
-			var roundUpScoreQuestion = $('.roundUpScoreQuestion', this.roundUpDiv);
 			var roundUpLabelHeader = $('.roundUpLabelHeader', this.roundUpDiv);
-			var roundUpLabelSum = $('.roundUpLabelSum', this.roundUpDiv);
-			var roundUpScoreSum = $('.roundUpScoreSum', this.roundUpDiv);
+			var roundUpLabelQuestion = $('.roundUpLabelQuestion', this.roundUpDiv);
+			var roundUpScoreQuestion = $('.roundUpScoreQuestion', this.roundUpDiv).html(startingPoints);
+			if(this.options.timeBonus) {
+				var roundUpLabelTimebonus = $('.roundUpLabelTimebonus', this.roundUpDiv);
+				var roundUpScoreTimebonus = $('.roundUpScoreTimebonus', this.roundUpDiv).html(startingPoints);
+				var roundUpLabelSum = $('.roundUpLabelSum', this.roundUpDiv);
+				var roundUpScoreSum = $('.roundUpScoreSum', this.roundUpDiv).html(startingPoints);
+			}
 			var next = $('.nextContainer', this.responseSplash);
 
-			roundUpScoreQuestion.text("0");
-			roundUpScoreTimebonus.text("0");
-			roundUpScoreSum.text("0");
-
-			TweenMax.set(this.responseSplash,{autoAlpha:1,scale:1});
+			TweenMax.set(this.responseSplash,{autoAlpha:1,scale:1,backgroundPositionY:-100});
+			TweenMax.set(this.responseSplash.children(),{autoAlpha:0});
 			this._trigger('beforeShowRoundSplash',null,{instance:this});
 			var hookNextQuestion = function() {
 				_this.responseSplash.on('click',function(){
 					_this.responseSplash.off('click');
 					_this._trigger('afterShowRoundSplash',null,{instance:this});
-					TweenMax.to(_this.responseSplash,0.5,{
-						autoAlpha:0,
-						scale:0.1,
-						ease: Back.easeIn,
-						onComplete: $.proxy(_this._showQuestion,_this)
+					var tl2 = new TimelineMax({onComplete:$.proxy(_this._showQuestion,_this)});
+					tl2.to(_this.responseSplash.children(),0.5,{autoAlpha:0});
+					tl2.to(_this.responseSplash,0.5,{
+						backgroundPositionY:-1000,
+						ease: Back.easeIn
 					});
+					tl2.to(_this.responseSplash,0.25,{autoAlpha:0});
 				})
 			}
 			var tl = new TimelineMax({onComplete:hookNextQuestion});
@@ -249,69 +232,40 @@
 						this.questionBadge,
 						this.option1,
 						this.option2,
-						this.option3
+						this.option3,
+						this.scoreBox
 					],
 					0.2,
 					{autoAlpha:0},
 					0.1
 				)
 			);
-			tl.add(
-				TweenMax.from(this.responseSplash,0.5,{y: -1000, autoAlpha:0, ease: Back.easeOut})
-			);
-			tl.add(TweenMax.set(this.roundUpDiv,{autoAlpha:1}));
-			tl.add(TweenMax.from(roundUpLabelHeader,0.25,{autoAlpha:0}));
-			tl.add(TweenMax.from(roundUpLabelQuestion,0.25,{autoAlpha:0, x: "+=100"}));
-			tl.add(TweenMax.from(roundUpScoreQuestion,0.25,{autoAlpha:0}));
+			tl.add(TweenMax.from(this.responseSplash,0.25,{autoAlpha:0}));
+			tl.add(TweenMax.from(this.responseSplash,0.5,{backgroundPositionY: -1000, ease: Back.easeOut}));
+			tl.add(TweenMax.to(this.responseSplash.children().not('.estrella'),0.5,{autoAlpha:1}));
+			for(var ii = 0;ii < this.roundPoints;ii++){
+				tl.to("#estrella"+(ii+1),0.1,{autoAlpha:1});
+			}
 			if(questionPoints > 0) {
-				var score = {points: 0};
-				tl.add(
-					TweenMax.to(score,1,{
-						points: questionPoints,
-						onUpdate: function() {
-							roundUpScoreQuestion.text( score.points << 0)
-						}
-					})
-				);
+				tl.set("#estrella"+this.roundPoints,{scale:3,transformOrigin:"center center"});
+				tl.to("#estrella"+this.roundPoints,0.5,{scale:1,autoAlpha:1,ease:Back.easeOut});
 			}
-			tl.add(TweenMax.from(roundUpLabelTimebonus,0.25,{autoAlpha:0, x: "+=100"}));
-			tl.add(TweenMax.from(roundUpScoreTimebonus,0.25,{autoAlpha:0}));
-			if(timePoints > 0) {
-				var score2 = {bonusPoints: 0};
-				tl.add(
-					TweenMax.to(score2,1,{
-						bonusPoints: timePoints,
-						onUpdate: function() {
-							roundUpScoreTimebonus.text( score2.bonusPoints << 0)
-						}
-					})
-				);
-			}
-			tl.add(TweenMax.from(roundUpLabelSum,0.25,{autoAlpha:0, x: "+=100"}));
-			tl.add(TweenMax.from(roundUpScoreSum,0.25,{autoAlpha:0}));
-			if(timePoints + questionPoints > 0) {
-				var score3 = {totalPoints: 0};
-				tl.add(
-					TweenMax.to(score3,1,{
-						totalPoints: timePoints + questionPoints,
-						onUpdate: function() {
-							roundUpScoreSum.text( score3.totalPoints << 0)
-						}
-					})
-				);
-			}
-			tl.add(TweenMax.from(next,0.5,{autoAlpha:0}),"+=0.25");
+
+			this.tweenRoot = tl;
 		},
-		_processResponse: function(answer) {
+		respond: function(answer, forceWrong, caption) { //wrapper para responder desde afuera
+			this._processResponse(answer, forceWrong, caption);
+		},
+		_processResponse: function(answer, forceWrong, caption) {
 			this.questionEndTime = new Date();
 			this.option1.off('click');
 			this.option2.off('click');
 			this.option3.off('click');
-			var correcto = answer === this.preguntaActual.correctAnswer;
+			var correcto = forceWrong ? false : answer === this.currentQuestion.correctAnswer;
 
 			var tiempo = this.questionEndTime - this.questionStartTime;
 			var timePoints = this.options.secondsPerQuestion * 1000 - tiempo;
-			if(timePoints < 0 || !correcto) {
+			if(timePoints < 0 || !correcto || !this.options.timeBonus) {
 				timePoints = 0;
 			}
 			var questionPoints = correcto ? this.options.scorePerQuestion : 0;
@@ -321,14 +275,14 @@
 			this._trigger('answered',null,{
 				correct:correcto,
 				answer:answer,
-				question:this.preguntaActual,
+				question:this.currentQuestion,
 				score:{
 					question: questionPoints,
 					timebonus: timePoints,
 					subtotal: this.roundPoints
 				}
 			});
-			this._showRoundUpSplash(questionPoints,timePoints);
+			this._showRoundUpSplash(questionPoints,timePoints, caption);
 		},
 		_shuffleArray: function(o){ 
 			for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x){}
@@ -336,7 +290,11 @@
 		},
 		_showStartSplash: function() {
 			var _this = this;
-			TweenMax.staggerTo(
+			var tl = new TimelineMax({onComplete: function(){
+				_this._trigger('gameReady',null,{instance:_this});
+			}});
+
+			tl.staggerTo(
 				[
 					this.endSplash,
 					this.option1,
@@ -347,14 +305,10 @@
 				],0.5,
 				{
 					autoAlpha:0
-				},0.25,
-				function() {
-					TweenMax.set(_this.startSplash,{scale:1,autoAlpha:0});
-					TweenMax.to(_this.startSplash,0.5,{autoAlpha:1, onComplete: function(){
-						_this._trigger('gameReady',null,{instance:_this});
-					}});
-				}
-			);
+				},0.25);
+			tl.set(_this.startSplash,{scale:1,autoAlpha:0});
+			tl.to(_this.startSplash,0.5,{autoAlpha:1});
+			this.tweenRoot = tl;
 		},
 		_setUpGameSpace: function() {
 			if(!this.options.useTemplate) {
@@ -362,12 +316,12 @@
 			}
 			var _this = this;
 			this.gameSpace = $('#gameSpace', this.element);
-			$('span.hiScoreLabel', "#hiScoreBox").text(this.options.labels.hiScore);
+			$('span.hiScoreLabel', "#hiScoreBox").html(this.options.labels.hiScore);
 			$('#hiScore', "#hiScoreBox").text(this.options.hiScore);
 
 			this.background = $('#background', this.gameSpace);
 			this.questionBox = $('#questionBox', this.gameSpace);
-			$('p.chooseOptionLabel', this.questionBox).text(this.options.labels.chooseOption);
+			$('p.chooseOptionLabel', this.questionBox).html(this.options.labels.chooseOption);
 
 			this.questionBadge = $('#questionBadge', this.gameSpace);
 			this.option1 = $('#option1', this.gameSpace);
@@ -377,21 +331,25 @@
 			this.responseSplash = $('#responseSplash', this.gameSpace);
 
 			this.startSplash = $('#startSplash', this.gameSpace);
-			$('p.startLabel', this.startSplash).text(this.options.labels.startGame);
-			$('.title', this.startSplash).text(this.options.labels.title);
+			$('p.startLabel', this.startSplash).html(this.options.labels.startGame);
+			$('.title', this.startSplash).html(this.options.labels.title);
 
 			this.endSplash = $('#endSplash', this.gameSpace);
 			this.newRecordBadge = $('#newHiScoreBadge', this.endSplash);
-			$('.finalScoreLabel', this.endSplash).text(this.options.labels.finalScore);
-			$('p.newHiScoreLabel',this.newRecordBadge).text(this.options.labels.newRecord);
-			$('p.endGameLabel', this.endSplash).text(this.options.labels.gameEnded);
+			$('.finalScoreLabel', this.endSplash).html(this.options.labels.finalScore);
+			$('p.newHiScoreLabel',this.newRecordBadge).html(this.options.labels.newRecord);
+			$('p.endGameLabel', this.endSplash).html(this.options.labels.gameEnded);
 
 			this.roundUpDiv = $('.roundUp',this.responseSplash);
-			$('.roundUpLabelQuestion', this.roundUpDiv).text(this.options.labels.roundUpQuestion);
-			$('.roundUpLabelTimebonus', this.roundUpDiv).text(this.options.labels.roundUpTimebonus);
-			$('.roundUpLabelHeader', this.roundUpDiv).text(this.options.labels.roundUpHeader);
-			$('.roundUpLabelSum', this.roundUpDiv).text(this.options.labels.roundUpSum);
-			$('p.nextLabel', this.responseSplash).text(this.options.labels.nextQuestion);
+			$('.roundUpLabelHeader', this.roundUpDiv).html(this.options.labels.roundUpHeader);
+			$('.roundUpLabelQuestion', this.roundUpDiv).html(this.options.labels.roundUpQuestion);
+			if(this.options.timeBonus) {
+				$('.roundUpLabelTimebonus', this.roundUpDiv).html(this.options.labels.roundUpTimebonus);
+				$('.roundUpLabelSum', this.roundUpDiv).html(this.options.labels.roundUpSum);
+			}
+			$('p.nextLabel', this.responseSplash).html(this.options.labels.nextQuestion);
+
+			TweenMax.set(this.gameSpace,{perspective:700});
 			TweenMax.set([
 				this.endSplash,
 				this.newRecordBadge,
@@ -401,8 +359,10 @@
 				this.option1,
 				this.option2,
 				this.option3,
-				this.responseSplash
+				this.responseSplash,
+				this.scoreBox
 			],{autoAlpha:0});
+			TweenMax.set('.estrella',{autoAlpha:0});
 
 			this._trigger('gamespaceReady', null, {instance:this});
 
@@ -431,6 +391,13 @@
 			this.questionBadge = $('<div id="questionBadge" />')
 				.appendTo(this.gameSpace);
 
+			this.scoreBox = $('<div id="scoreBox" />')
+				.append($('<img class="estrella" id="miniEstrella1" src="images/miniStar.png" />'))
+				.append($('<img class="estrella" id="miniEstrella2" src="images/miniStar.png" />'))
+				.append($('<img class="estrella" id="miniEstrella3" src="images/miniStar.png" />'))
+				.append($('<p id="score">0/70</p>'))
+				.appendTo(this.gameSpace);
+
 			// this.optionsContainer = $('<div id="optionsContainer" />')
 				// .appendTo(this.gameSpace);
 			this.option1 = $('<div id="option1" />')
@@ -447,15 +414,20 @@
 			roundUp.append('<p class="roundUpLabelHeader" />');
 			roundUp.append('<span class="roundUpLabelQuestion" />');
 			roundUp.append('<span class="roundUpScoreQuestion" />');
-			roundUp.append('<span class="roundUpLabelTimebonus" />');
-			roundUp.append('<span class="roundUpScoreTimebonus" />');
-			roundUp.append('<span class="roundUpLabelSum" />');
-			roundUp.append('<span class="roundUpScoreSum" />');
+			if(this.options.timeBonus) {
+				roundUp.append('<span class="roundUpLabelTimebonus" />');
+				roundUp.append('<span class="roundUpScoreTimebonus" />');
+				roundUp.append('<span class="roundUpLabelSum" />');
+				roundUp.append('<span class="roundUpScoreSum" />');
+			}
 
 			this.responseSplash = $('<div id="responseSplash" />')
 				.append('<p class="result" />')
 				.append('<p class="resultTip" />')
 				.append(roundUp)
+				.append('<img class="estrella" id="estrella1" src="images/star.png" />')
+				.append('<img class="estrella" id="estrella2" src="images/star.png" />')
+				.append('<img class="estrella" id="estrella3" src="images/star.png" />')
 				.append('<div class="nextContainer"><p class="nextLabel" /></div>')
 				.appendTo(this.gameSpace);
 
@@ -467,11 +439,14 @@
 			this.endSplash = $('<div id="endSplash" />')
 				.append('<div class="finalScoreLabel" />')
 				.append('<div class="finalScore" />')
+				.append('<img class="estrella" id="estrellaFinal1" src="images/star.png" />')
+				.append('<img class="estrella" id="estrellaFinal2" src="images/star.png" />')
+				.append('<img class="estrella" id="estrellaFinal3" src="images/star.png" />')
 				.append($('<div id="newHiScoreBadge" />').append('<p class="newHiScoreLabel" />'))
 				.append($('<div id="endButton" />').append('<p class="endGameLabel" />'))
 				.appendTo(this.gameSpace);
 
-			this._trigger('gamespaceBuilt', null, this);
+			this._trigger('gamespaceBuilt', null, {instance:this});
 		},
 		_triggerError: function(msg) {
 			var err = {

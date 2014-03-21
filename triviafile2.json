@@ -1,0 +1,681 @@
+{
+	"questions": [
+		{
+			"id":0,
+			"question":"¿Cuál es la capital de la provincia de Buenos Aires?",
+			"correctAnswer":"La Plata",
+			"answerTip":"La capital de la provincia de Buenos Aires es La Plata. Se ubica a 56 Km. al sudeste de la ciudad de Buenos Aires. Fue fundada oficialmente por el gobernador Dardo Rocha el 19 de noviembre de 1882",
+			"provinciaId":6,
+			"provinciaName":"Buenos Aires"
+		},
+		{
+			"id":1,
+			"question":"¿Cuál es el partido con mayor superficie del Gran Buenos Aires?",
+			"correctAnswer":"La Matanza",
+			"answerTip":"El partido con mayor superficie del Gran Buenos Aires es La Matanza. Cuenta con una superficie total de 325,71 Km².\nEl distrito limita al noroeste con la Ciudad Autónoma de Buenos Aires, al sudoeste con Cañuelas y Marcos Paz, mientras que al sudeste con los partidos de Lomas de Zamora y Esteban Echeverría; y por último al noroeste con Marcos Paz, Merlo, Morón y Tres de Febrero.\n",
+			"provinciaId":6,
+			"provinciaName":"Buenos Aires"
+		},
+		{
+			"id":2,
+			"question":"¿Cuál es la superficie de la provincia de Buenos Aires?",
+			"correctAnswer":"307.571 km² ",
+			"answerTip":"307.571 km² es la superficie de la provincia de Buenos Aires (aproximadamente la superficie de Polonia o Italia). Es la tercera entidad subnacional más extensa de Hispanoamérica detrás de Santa Cruz en Bolivia y Loreto en Perú.",
+			"provinciaId":6,
+			"provinciaName":"Buenos Aires"
+		},
+		{
+			"id":3,
+			"question":"¿En cuantos partidos se encuentra dividida la provincia de Buenos Aires?",
+			"correctAnswer":"135",
+			"answerTip":"Se encuentra dividida en 135 municipios, denominados constitucionalmente partidos.",
+			"provinciaId":6,
+			"provinciaName":"Buenos Aires"
+		},
+		{
+			"id":4,
+			"question":"¿Cuántos habitantes tienen la provincia de Buenos Aires?",
+			"correctAnswer":"15 625 084 habitantes",
+			"answerTip":"Su población es de 15 625 084  de habitantes según los resultados definitivos del censo de 2010; con lo cual es la provincia más poblada de la República Argentina.",
+			"provinciaId":6,
+			"provinciaName":"Buenos Aires"
+		},
+		{
+			"id":5,
+			"question":"¿Cuál es el Cerro más alto de la provincia de Buenos Aires?",
+			"correctAnswer":"Cerro Tres Picos",
+			"answerTip":"Con sus 1239 msnm y una antigüedad de 400 millones de años, es el punto más alto de la provincia. Se encuentra a 600 km al sudoeste de la ciudad de Buenos Aires y la localidad más cercana es Villa Ventana, partido de Tornquist.",
+			"provinciaId":6,
+			"provinciaName":"Buenos Aires"
+		},
+		{
+			"id":6,
+			"question":"¿Cuántos habitantes tienen la provincia de Catamarca?",
+			"correctAnswer":"367,820",
+			"answerTip":"Su población es de 367.820 según el censo nacional 2010, una densidad de 3,58 habitantes por km², lo que la coloca en el puesto Nº 20 de las más pobladas de Argentina.",
+			"provinciaId":18,
+			"provinciaName":"Catamarca"
+		},
+		{
+			"id":7,
+			"question":"¿En cuántos municipios se encuentra dividida la provincia de Catamarca?",
+			"correctAnswer":"36",
+			"answerTip":"Se encuentra dividida en 36 municipios que conforman 16 departamentos. ",
+			"provinciaId":18,
+			"provinciaName":"Catamarca"
+		},
+		{
+			"id":8,
+			"question":"¿Cuál es la superficie total de la provincia de Catamarca?",
+			"correctAnswer":"102.602 km²",
+			"answerTip":"Los 102.602 km², la colocan en el puesto Nº 11 de las provincias más extensas de la República Argentina.",
+			"provinciaId":18,
+			"provinciaName":"Catamarca"
+		},
+		{
+			"id":9,
+			"question":"¿De que origen es la palabra \"Catamarca\" ?",
+			"correctAnswer":"Quichua",
+			"answerTip":"La palabra Catamarca es de origen quichua y significa Castillo o Fortaleza en la Falda. Cata es falda o ladera y marca es castillo o fortaleza de la frontera.",
+			"provinciaId":18,
+			"provinciaName":"Catamarca"
+		},
+		{
+			"id":10,
+			"question":"¿ Con cuál provincia limita Catamarca al Norte?",
+			"correctAnswer":"Salta",
+			"answerTip":"Catamarca limita al norte con la provincia de Salta.",
+			"provinciaId":18,
+			"provinciaName":"Catamarca"
+		},
+		{
+			"id":11,
+			"question":"¿ En que año fue fundada la ciudad de San Fernando del Valle de Catamarca, capital de la provincia?",
+			"correctAnswer":"1683",
+			"answerTip":"San Fernando del Valle fue fundada el 5 de julio de 1683 por Fernando de Mendoza y Mate de Luna; luego de varias fundaciones en las que el pueblo había sido bautizado con diferentes nombres y trasladado a diferentes lugares del actual territorio de la provincia de Catamarca",
+			"provinciaId":18,
+			"provinciaName":"Catamarca"
+		},
+		{
+			"id":12,
+			"question":"¿Cuál es el nombre de la capital de la provincia del Chaco?",
+			"correctAnswer":"Resistencia",
+			"answerTip":"Resistencia es la capital y ciudad más poblada de la Provincia del Chaco, además de su principal centro cultural y económico. Tiene una superficie de 562 km²",
+			"provinciaId":19,
+			"provinciaName":"Chaco"
+		},
+		{
+			"id":13,
+			"question":"¿Cuántos idiomas oficiales declaró la provincia del Chaco?",
+			"correctAnswer":"4",
+			"answerTip":"En el año 2010, la Provincia del Chaco adoptó 4 (cuatro) idiomas oficiales, al declarar a los idiomas qom (Lengua nativa de la etnia toba), moqoit (Lengua nativa de la etnia mocoví) y el wichi (Lengua nativa de la etnia wichi) como idiomas oficiales alternativos; además del español de toda la Argentina.",
+			"provinciaId":19,
+			"provinciaName":"Chaco"
+		},
+		{
+			"id":14,
+			"question":"¿Con cuantas provincias limita la provincia del Chaco?",
+			"correctAnswer":"5",
+			"answerTip":"Al oeste limita con las provincias de Salta y Santiago del Estero, al sur con Santa Fe. El río Paraná la separa de la provincia de Corrientes; al Este y norte limita con Formosa mediante el río Bermejo y su afluente, el río Teuco.",
+			"provinciaId":19,
+			"provinciaName":"Chaco"
+		},
+		{
+			"id":15,
+			"question":"¿Qué río separa Chaco de la provincia de Corrientes?",
+			"correctAnswer":"Río Paraná",
+			"answerTip":"El río Paraná sirve de limite natural entre ambas provincias",
+			"provinciaId":19,
+			"provinciaName":"Chaco"
+		},
+		{
+			"id":16,
+			"question":"¿Cuántos habitantes tienen la provincia del Chaco?",
+			"correctAnswer":"1.053.466 habitantes",
+			"answerTip":"Según el censo 2010 la provincia del Chaco cuenta con 1.053.466 habitantes. 520.640 Varones y  532.823 Mujeres",
+			"provinciaId":19,
+			"provinciaName":"Chaco"
+		},
+		{
+			"id":17,
+			"question":"¿Cuál es la superficie total de la provincia del Chaco?",
+			"correctAnswer":" 99 633 km²",
+			"answerTip":" La superficie total de la provincia del Chaco es 99 633 km². Su superficie la coloca en el puesto Nº 12 de las provincias más extensas de la República Argentina.",
+			"provinciaId":19,
+			"provinciaName":"Chaco"
+		},
+		{
+			"id":18,
+			"question":"¿Cuál localidad de la provincia del Chubut es considerada “La Capital de la Fruta Fina”?",
+			"correctAnswer":"El Hoyo",
+			"answerTip":"El Hoyo es la localidad de la provincia del Chubut considerada como “la Capital de la Fruta Fina”. Declarada en el año 1986 todos los meses de enero se celebra la Fiesta Nacional de la Fruta Fina con el objetivo de homenajear la principal actividad económica. El grupo de “frutas finas” -denominación que se vincula al aspecto comercial y no al botánico- incluye a un conjunto de especies que se caracterizan por su reducido tamaño y pueden clasificarse en Berries, (Arándanos, Frambuesas rojas, Moras y frutillas) y Cherries (Cerezas y Guindas) ",
+			"provinciaId":2,
+			"provinciaName":"Chubut"
+		},
+		{
+			"id":19,
+			"question":"¿En que año fue creado el Parque Nacional Los Alerces?",
+			"correctAnswer":"1937",
+			"answerTip":"El parque nacional Los Alerces se encuentra en la Provincia del Chubut. Fue creado en el año 1937 y posee una superficie de 259 570 ha. El fundamento de su creación es la protección de los bosques de lahuán o alerce, uno de los árboles de mayor longevidad del planeta, que llegó a estar en peligro de extinción.",
+			"provinciaId":2,
+			"provinciaName":"Chubut"
+		},
+		{
+			"id":20,
+			"question":"¿Qué ciudad es conocida como la “Capital Nacional del Petróleo”?",
+			"correctAnswer":"Comodoro Rivadavia",
+			"answerTip":"La ciudad de Comodoro Rivadavia es conocida como la “capital nacional del petróleo”. Se le ha otorgado ese nombre en reconocimiento por su papel protagónico en los inicios de la generación de esa fuente de energía.",
+			"provinciaId":2,
+			"provinciaName":"Chubut"
+		},
+		{
+			"id":21,
+			"question":"¿En que año fue declarada la Península Valdés Patrimonio de la Humanidad?",
+			"correctAnswer":"1999",
+			"answerTip":"La Península Valdés se encuentra en la  Provincia del Chubut y fue  declaradó por la UNESCO Patrimonio de la Humanidad. Presenta una porción de tierra de contorno casi triangular unida al continente por el istmo Carlos Ameghino. Su centro geográfico se ubica hacia las coordenadas:  42°31′S 63°55′O.",
+			"provinciaId":2,
+			"provinciaName":"Chubut"
+		},
+		{
+			"id":22,
+			"question":"¿Cuál es el nombre de la capital de la provincia del Chubut?",
+			"correctAnswer":"Rawson",
+			"answerTip":"Rawson es la ciudad capital de la provinciadel Chubut. La ciudad se encuentra ubicada en el Valle inferior del río Chubut, a 7 km de la desembocadura del río en el Océano Atlántico.",
+			"provinciaId":2,
+			"provinciaName":"Chubut"
+		},
+		{
+			"id":23,
+			"question":"¿Cuál es la ciudad más poblada de la provincia del Chubut?",
+			"correctAnswer":"Comodoro Rivadavia",
+			"answerTip":"La ciudad de Comodoro Rovadavia tiene 177 038 habitantes según Censo 2010.",
+			"provinciaId":2,
+			"provinciaName":"Chubut"
+		},
+		{
+			"id":24,
+			"question":"¿Cuál es la cota (altura) del Cerro Uritorco?",
+			"correctAnswer":"1949 msnm",
+			"answerTip":"El cerro Uritorco tiene una altura de 1949 msnm y esta situado en el norte del Valle de Punilla, próximo a Capilla del Monte.",
+			"provinciaId":10,
+			"provinciaName":"Córdoba"
+		},
+		{
+			"id":25,
+			"question":"¿Con cuantas provincias limita la provincia de Córdoba?",
+			"correctAnswer":"7",
+			"answerTip":"Las provincias con las que limita Córdoba son Catamarca, Santiago del Estero, Santa Fe, Buenos Aires, La Pampa, San Luis y La Rioja.",
+			"provinciaId":10,
+			"provinciaName":"Córdoba"
+		},
+		{
+			"id":26,
+			"question":"¿En cuantos departamentos se divide la provincia de Córdoba?",
+			"correctAnswer":"26",
+			"answerTip":"",
+			"provinciaId":10,
+			"provinciaName":"Córdoba"
+		},
+		{
+			"id":27,
+			"question":"¿En cuál localidad se celebra la Fiesta Provincial del \"Salame Casero\" ?",
+			"correctAnswer":"Colonia Caroya",
+			"answerTip":"La Fiesta Provincial del Salame Casero tiene lugar durante la primera quincena del mes de Octubre. Se llevó a cabo por primera vez en septiembre de 1979 con el fin de mantener vigente la tradición friulana y la indiscutida popularidad del salame de Colonia Caroya.",
+			"provinciaId":10,
+			"provinciaName":"Córdoba"
+		},
+		{
+			"id":28,
+			"question":"¿Cuántos habitantes tienen la provincia de Córdoba?",
+			"correctAnswer":"3. 308. 876 habitantes",
+			"answerTip":"Según el censo nacional 2010 su población es de 3 308 876 habitantes, con lo cual es la 2ª provincia más poblada de la República Argentina.",
+			"provinciaId":10,
+			"provinciaName":"Córdoba"
+		},
+		{
+			"id":29,
+			"question":"¿En que año se fundó la capital de Córdoba?",
+			"correctAnswer":"1573",
+			"answerTip":"El 6 de julio de 1573 Jerónimo Luis de Cabrera fundó la ciudad de Córdoba de La Nueva Andalucía, a orillas del río Suquía",
+			"provinciaId":10,
+			"provinciaName":"Córdoba"
+		},
+		{
+			"id":30,
+			"question":"¿Cuál es el idioma oficial alternativo de la provincia de Corrientes?",
+			"correctAnswer":"Guaraní",
+			"answerTip":"El gobierno correntino declaró en 2004 el guaraní correntino como \"idioma oficial alternativo\" de la provincia, junto con el español. Hasta 2010 fue la única provincia con ese estatus, al sumársele la Provincia del Chaco",
+			"provinciaId":15,
+			"provinciaName":"Corrientes"
+		},
+		{
+			"id":31,
+			"question":"¿Con cuantos países limita la provincia de Corrientes?",
+			"correctAnswer":"3",
+			"answerTip":"Limita al norte con la República del Paraguay y al este con la República Federativa del Brasil y la República Oriental del Uruguay.",
+			"provinciaId":15,
+			"provinciaName":"Corrientes"
+		},
+		{
+			"id":32,
+			"question":"¿Qué río separa a la provincia de Corrientes de los países de Brasil y Uruguay?",
+			"correctAnswer":"Uruguay",
+			"answerTip":"",
+			"provinciaId":15,
+			"provinciaName":"Corrientes"
+		},
+		{
+			"id":33,
+			"question":"¿Sobre cuál río esta ubicada la represa hidroeléctrica de Yaciretá-Apipé ?",
+			"correctAnswer":"Paraná",
+			"answerTip":"La represa hidroeléctrica de Yacyretá-Apipé es una central hidroeléctrica construida sobre los saltos de Yacyretá-Apipé en el río Paraná.\nEl equipo de la central tiene una potencia instalada total de 3200 MW, y una Línea de cota de 83 metros sobre el nivel del mar, existiendo un proyecto de ampliación que permitiría incrementar esta capacidad casi al doble. ",
+			"provinciaId":15,
+			"provinciaName":"Corrientes"
+		},
+		{
+			"id":34,
+			"question":"¿En que año fue fundada la ciudad de Corrientes?",
+			"correctAnswer":"1588",
+			"answerTip":"La ciudad de Corrientes fue fundada por el adelantado Juan Torres de Vera y Aragón con el auxilio de Alonso de Vera y Hernando Arias de Saavedra, el 3 de abril de 1588. ",
+			"provinciaId":15,
+			"provinciaName":"Corrientes"
+		},
+		{
+			"id":35,
+			"question":"¿Qué río separa Corrientes del Paraguay y de las provincias del Chaco y Santa Fe?",
+			"correctAnswer":"Paraná",
+			"answerTip":"La provincia correntina limita al norte y al oeste con el Río Paraná, que la separa del Paraguay y las provincias de Chaco y Santa Fe.",
+			"provinciaId":15,
+			"provinciaName":"Corrientes"
+		},
+		{
+			"id":36,
+			"question":"¿Con cuál país limita la provincia de Formosa?",
+			"correctAnswer":"Paraguay",
+			"answerTip":"La provincia de Formosa limita al este y al norte con la República del Paraguay.",
+			"provinciaId":20,
+			"provinciaName":"Formosa"
+		},
+		{
+			"id":37,
+			"question":"¿Con cuál país limita la provincia de Entre Ríos?",
+			"correctAnswer":"Uruguay",
+			"answerTip":"Entre Ríos limita al este con la República Oriental del Uruguay.",
+			"provinciaId":9,
+			"provinciaName":"Entre Ríos"
+		},
+		{
+			"id":38,
+			"question":"¿Cuál es el nombre de la capital de Entre Ríos?",
+			"correctAnswer":"Paraná",
+			"answerTip":"Paraná es la ciudad capital de la provincia de Entre Ríos. Se ubica en el centro-este del país, sobre la margen izquierda del río Paraná.\nPosee 137 km² y una población de 247 863 habitantes, según datos definitivos del censo de 2010.",
+			"provinciaId":9,
+			"provinciaName":"Entre Ríos"
+		},
+		{
+			"id":39,
+			"question":"¿Con cuál provincia une a Entre Ríos el túnel subfluvial Raúl Uranga – Carlos Sylvestre Begnis, antes conocido como \"Hernandarias\"?",
+			"correctAnswer":"Santa Fe",
+			"answerTip":"Construido entre 1961 y 1969 el túnel une, por debajo del lecho del río Paraná, la ciudad de Paraná con la  la vecina provincia de Santa Fe, comunicando las redes de tránsito rodado de ambas provincias.",
+			"provinciaId":9,
+			"provinciaName":"Entre Ríos"
+		},
+		{
+			"id":40,
+			"question":"¿Cuál provincia limita al norte de Entre Ríos?",
+			"correctAnswer":"Corrientes",
+			"answerTip":"",
+			"provinciaId":9,
+			"provinciaName":"Entre Ríos"
+		},
+		{
+			"id":41,
+			"question":"¿En que año se creó el Parque Nacional El Palmar?",
+			"correctAnswer":"1966",
+			"answerTip":"El Parque Nacional El Palmar se creó en 1966 con el objetivo de conservar un sector representativo de palmares de yatay. Se encuentra en el centro-este de la provincia sobre el río Uruguay en el departamento Colón. Es uno de los palmares naturales más australes del planeta.",
+			"provinciaId":9,
+			"provinciaName":"Entre Ríos"
+		},
+		{
+			"id":42,
+			"question":"¿En cuantos departamentos se divide la provincia de Formosa?",
+			"correctAnswer":"9",
+			"answerTip":"La provincia se encuentra dividida en 9 departamentos: Bermejo, Formosa, Laishi, Matacos, Patiño, Pilagás, Pilcomayo, Pirané y Ramón Lista.",
+			"provinciaId":20,
+			"provinciaName":"Formosa"
+		},
+		{
+			"id":43,
+			"question":"¿Cómo se denomina al Parque Nacional ubicado en la Provincia de Formosa?",
+			"correctAnswer":"Parque Nacional Pilcomayo",
+			"answerTip":"El Parque Nacional Río Pilcomayo fue creado en 1951 y se halla a 5 km de la localidad de Laguna Blanca. Tiene una extensión de 51.889 hectareas y su centro geográfico se halla en las coordenadas 25°04′00″S 58°07′00″O.",
+			"provinciaId":20,
+			"provinciaName":"Formosa"
+		},
+		{
+			"id":44,
+			"question":"¿Qué río constituye el limite sur natural de la provincia de Formosa?",
+			"correctAnswer":"Bermejo",
+			"answerTip":"Constituye el límite Sur natural de la Provincia de Formosa (y desagua en el Río Paraguay), desplazándose de NNO a SSE. Hasta Fortín Lavalle, el río no recibe prácticamente aportes laterales significativos; hacia aguas abajo tiene aportes periódicos de algunos ríos y arroyos (Dobagán, Bellago) e incluso de esteros (principalmente el Bellaco).",
+			"provinciaId":20,
+			"provinciaName":"Formosa"
+		},
+		{
+			"id":45,
+			"question":"¿Qué río se considera como limite argentino-paraguayo en la provincia de Formosa?",
+			"correctAnswer":"Pilcomayo",
+			"answerTip":"El Río Pilcomayo, que se considera como límite argentino-paraguayo, tiene dirección Noroeste - Sureste (NW - SE).",
+			"provinciaId":20,
+			"provinciaName":"Formosa"
+		},
+		{
+			"id":46,
+			"question":"¿En que localidad de encuentra el Cerro de los Siete Colores?",
+			"correctAnswer":"Purmamarca",
+			"answerTip":"El Cerro de los Siete Colores se encuentra en la localidad de Purmamarca y ambos forman una de las postales más reconocidas del noroeste argentino.",
+			"provinciaId":22,
+			"provinciaName":"Jujuy"
+		},
+		{
+			"id":47,
+			"question":"¿En que año la Quebrada de Humahuaca fue declarada Patrimonio de la Humanidad por la UNESCO?",
+			"correctAnswer":"2003",
+			"answerTip":"La Quebrada de Humahuaca fue declarada Patrimonio Cultural y Natural de la Humanidad en julio de 2003 por la Unesco, por ser una combinación de maravillosos paisajes, los numerosos caseríos, pueblos y ciudades que conservan muchos vestigios precolombinos y coloniales.",
+			"provinciaId":22,
+			"provinciaName":"Jujuy"
+		},
+		{
+			"id":48,
+			"question":"¿Con cuál país une a San Salvador de Jujuy el Paso de Jama?",
+			"correctAnswer":"Chile",
+			"answerTip":"Este paso fronterizo fue inaugurado oficialmente el 6 de diciembre de 1991 y está totalmente pavimentado desde fines del año 2005. Une la II Región de Antofagasta con la Provincia de Jujuy a través de la ruta 27-CH de Chile y la Ruta Nacional 52 de Argentina.",
+			"provinciaId":22,
+			"provinciaName":"Jujuy"
+		},
+		{
+			"id":49,
+			"question":"¿En cuál departamento se encuentra el Parque Nacional Calilegua?",
+			"correctAnswer":"  Departamento Ledesma",
+			"answerTip":"El parque nacional Calilegua es un área protegida situada en el departamento de Ledesma, en el sudeste de la provincia. Su creación en 1979 tenía como objetivo la protección de las yungas, y el resguardo de las nacientes de arroyos de la sierra para preservar una importante cuenca hídrica, la cual abastece de agua a las zonas agrícolas y poblaciones cercanas. ",
+			"provinciaId":22,
+			"provinciaName":"Jujuy"
+		},
+		{
+			"id":50,
+			"question":"¿En cuál departamento se encuentra La Quiaca?",
+			"correctAnswer":"Departamento Yavi",
+			"answerTip":"La Quiaca se ubicada en el departamento de Yavi al norte de la provincia. Es cabecera del mismo y sirve de paso fronterizo con Bolivia, a través de la ciudad de Villazón con la cual conforma actualmente una conurbación de más de 50 000 habitantes.",
+			"provinciaId":22,
+			"provinciaName":"Jujuy"
+		},
+		{
+			"id":51,
+			"question":"¿Cuántas son las lagunas de Yala que se encuentran ubicadas en el Parque Provincial Potrero de Yala?",
+			"correctAnswer":"6",
+			"answerTip":"Las lagunas de Yala son seis espejos de agua ubicados en los límites entre el bosque montano y los pastizales de neblina: Larga, Los Noques, Alizar, Rodeo, Desaguadero y El Comedero. Solamente las tres últimas son accesibles.",
+			"provinciaId":22,
+			"provinciaName":"Jujuy"
+		},
+		{
+			"id":52,
+			"question":"¿Cómo se llama la capital de la Provincia de La Pampa?",
+			"correctAnswer":"Santa Rosa",
+			"answerTip":"Santa Rosa es la capital de La Pampa y la ciudad cabecera del Departamento Capital. Constituida por 54 barrios, está situada geográficamente en el centro del país, en un contexto de transición, entre la estepa templada y estepa seca (la pampa seca y la pampa húmeda).",
+			"provinciaId":5,
+			"provinciaName":"La Pampa"
+		},
+		{
+			"id":53,
+			"question":"¿Qué río separa La Pampa de la provincia de Río Negro?",
+			"correctAnswer":"Río Colorado",
+			"answerTip":"El Colorado es un río del centro-sur de Argentina que nace en la cordillera de los Andes y desemboca en el mar Argentino. Tambiém sirve de limite a lasprovicnias de Mendoza y Neuquén.",
+			"provinciaId":5,
+			"provinciaName":"La Pampa"
+		},
+		{
+			"id":54,
+			"question":"¿Cuantas provincias limitan con La Pampa?",
+			"correctAnswer":"6",
+			"answerTip":" La Pampa limita con las provincias de Río Negro, Buenos Aires, San Luis, Córdoba, Mendoza y Neuquén.",
+			"provinciaId":5,
+			"provinciaName":"La Pampa"
+		},
+		{
+			"id":55,
+			"question":"¿Con que Parque Nacional cuenta la provincia de La Pampa?",
+			"correctAnswer":"Parque Nacional Lihuél Calel ",
+			"answerTip":"El parque nacional Lihué Calel tiene 9901 hectareas en el centro sur de la provincia de La Pampa, departamento Lihuel Calel. Fue creado en 1977. El decreto N.° 2149/90 del 10 de octubre de 1990 designó a un sector del parque nacional como reserva natural estricta.",
+			"provinciaId":5,
+			"provinciaName":"La Pampa"
+		},
+		{
+			"id":56,
+			"question":"¿Cuál provincia limita al este La Pampa?",
+			"correctAnswer":"Buenos Aires",
+			"answerTip":"La Pampa, situada en la Región pampeana, Limita este con la provincia de Buenos Aires.",
+			"provinciaId":5,
+			"provinciaName":"La Pampa"
+		},
+		{
+			"id":57,
+			"question":"¿Cúal es el árbol tipico de la provincia de La Pampa?",
+			"correctAnswer":"Caldén",
+			"answerTip":"Prosopis caldenia (Caldén) es una especie del Género Prosopis, de árboles leguminosas con espinas. El Parque Luro , a 35 km de la ciudad capital provincial de Santa Rosa, es quizás la mayor reserva natural de caldenes en el mundo",
+			"provinciaId":5,
+			"provinciaName":"La Pampa"
+		},
+		{
+			"id":58,
+			"question":"¿Con qué parque nacional cuenta la provincia de La Rioja?",
+			"correctAnswer":"Parque Nacional Talampaya",
+			"answerTip":"El parque nacional Talampaya es una reserva natural y uno de los siete \"Patrimonios de la Humanidad\" declarados por la Unesco en Argentina. Se encuentra ubicado en el centro-oeste de la provincia de La Rioja. Fue creado en 1975 como parque provincial con el objetivo de proteger importantes yacimientos arqueológicos y paleontológicos de la zona.",
+			"provinciaId":13,
+			"provinciaName":"La Rioja"
+		},
+		{
+			"id":59,
+			"question":"¿Cómo se denomina el dique más grande conque cuenta la provincia de La Rioja?",
+			"correctAnswer":"Dique de Anzulón",
+			"answerTip":"",
+			"provinciaId":13,
+			"provinciaName":"La Rioja"
+		},
+		{
+			"id":60,
+			"question":"¿En la ladera Este de qué sierra se emplaza la capital de la provincia de La Rioja?",
+			"correctAnswer":"Sierra de Velasco",
+			"answerTip":"La sierra de Velasco es una cadena montañosa ubicada en la provincia de La Rioja. Cerca de sus laderas se establecen las dos ciudades mas importares de la provincia, la capital riojana del mismo nombre y Chilecito. La mayor altura de la sierra del Velasco es de 4.920 msnm.",
+			"provinciaId":13,
+			"provinciaName":"La Rioja"
+		},
+		{
+			"id":61,
+			"question":"¿Cuál es el principal cultivo de la provincia de La Rioja?",
+			"correctAnswer":"La vid",
+			"answerTip":"",
+			"provinciaId":13,
+			"provinciaName":"La Rioja"
+		},
+		{
+			"id":62,
+			"question":"¿Con qué país limita la provincia de La Rioja?",
+			"correctAnswer":"Chile",
+			"answerTip":"La Rioja limita al noroeste con el país vecino de Chile.",
+			"provinciaId":13,
+			"provinciaName":"La Rioja"
+		},
+		{
+			"id":63,
+			"question":"¿Con cuantas provincias limita la provincia de La Rioja?",
+			"correctAnswer":"4",
+			"answerTip":"La Rioja limita al oeste con la provincia de San Juan, al sur con San Luis, al este con Córdoba y al norte con Catamarca.",
+			"provinciaId":13,
+			"provinciaName":"La Rioja"
+		},
+		{
+			"id":64,
+			"question":"¿Con qué país limita la provincia de Mendoza?",
+			"correctAnswer":"Chile.",
+			"answerTip":"Con una superficie de 148 827 km², la provincia de Mendoza limita al oeste con el país vecino de Chile.",
+			"provinciaId":7,
+			"provinciaName":"Mendoza"
+		},
+		{
+			"id":65,
+			"question":"¿Con cuantas provincias limita la provincia de Mendoza?",
+			"correctAnswer":"4",
+			"answerTip":"Mendoza limita al norte con la provincia de San Juan, al este con la provincia de San Luis, al sur con la La Pampa y Neuquén.",
+			"provinciaId":7,
+			"provinciaName":"Mendoza"
+		},
+		{
+			"id":66,
+			"question":"¿Qué Fiesta Nacional se celebra en la provincia de Mendoza, la cual está relacionada con la principal actividad agrícola de la provincia?",
+			"correctAnswer":"La Fiesta Nacional de la Vendimia.",
+			"answerTip":"La Fiesta Nacional de la Vendimia es una festividad tradicional y popular originaria de la provincia de Mendoza.Refleja la celebración de la uva transformada en vino a través del esfuerzo que los viñateros llevan a cabo en las viñas. Se celebra durante los primeros días del mes de marzo.",
+			"provinciaId":7,
+			"provinciaName":"Mendoza"
+		},
+		{
+			"id":67,
+			"question":"¿Qué importante centro turístico relacionado con el esquí se encuentra en el Departamento Malargüe, en la provincia de Mendoza?",
+			"correctAnswer":"Las Leñas",
+			"answerTip":"El centro de esquí más conocido de la provincia de Mendoza es “Las Leñas”. Posee el descenso ininterrumpido más largo del país, con 7050 m conectando las pistas Apolo, Neptuno y Venus.",
+			"provinciaId":7,
+			"provinciaName":"Mendoza"
+		},
+		{
+			"id":68,
+			"question":"¿Que fuente de agua mineral natural se encuentra en el Departamento Las Heras en la provincia de Mendoza?",
+			"correctAnswer":"Villavicencio",
+			"answerTip":"",
+			"provinciaId":7,
+			"provinciaName":"Mendoza"
+		},
+		{
+			"id":69,
+			"question":"¿Cuál es la cota (altura) del cerro Aconcagua, ubicado en la provincia de Mendoza?",
+			"correctAnswer":"6960,8 metros",
+			"answerTip":"En el año 2012 el Instituto Geográfico Nacional determinó  que la cota oficial del cerro Aconcagua es de 6960,8 metros",
+			"provinciaId":7,
+			"provinciaName":"Mendoza"
+		},
+		{
+			"id":70,
+			"question":"¿Por cuántos ríos  está rodeada la  provincia de Misiones?",
+			"correctAnswer":"5",
+			"answerTip":"La provincia de Misiones se encuentra rodeada por los ríos Paraná, Uruguay, Iguazú, San Antonio y Pepirí Guazú",
+			"provinciaId":17,
+			"provinciaName":"Misiones"
+		},
+		{
+			"id":71,
+			"question":"¿Cuántos saltos forman las Cataratas del Iguazú?",
+			"correctAnswer":"275",
+			"answerTip":"Los 275 saltos se localizan sobre el río Iguazú, en el límite entre la provincia de Misiones y el estado brasileño de Paraná. El 80% de los saltos se encuentran en territorio argentino.",
+			"provinciaId":17,
+			"provinciaName":"Misiones"
+		},
+		{
+			"id":72,
+			"question":"¿Cúal es el nombre de la capital de la provincia de Misiones?",
+			"correctAnswer":"Posadas",
+			"answerTip":"Posadas capital de la provincia de Misiones. Se ubica en el margen izquierdo del río Paraná, al sudoeste de la provincia y en el noroeste del departamento Capital.\nEs la ciudad más poblada de Misiones y su centro administrativo, comercial y cultural.",
+			"provinciaId":17,
+			"provinciaName":"Misiones"
+		},
+		{
+			"id":73,
+			"question":"¿Con cuantos países limita la provincia de Misiones?",
+			"correctAnswer":"2",
+			"answerTip":"Limita al oeste con Paraguay, del que está separada por el río Paraná, al este, norte y sur con Brasil, por medio de los ríos Iguazú, San Antonio y Pepirí Guazú.",
+			"provinciaId":17,
+			"provinciaName":"Misiones"
+		},
+		{
+			"id":74,
+			"question":"¿Qué río alimenta el flujo de las Cataratas de Iguazú?",
+			"correctAnswer":"Río Iguazú",
+			"answerTip":"El río Iguazú es un río del nordeste de la Argentina y del sudeste del Brasil, en el centro-este de América del Sur. Pertenece a la cuenca del Plata. Nace en el cordón montañoso brasileño denominado Serra do Mar, en el estado de Paraná, y luego de un recorrido de aproximadamente 1300 kilómetros desemboca en el río Alto Paraná.",
+			"provinciaId":17,
+			"provinciaName":"Misiones"
+		}
+	],
+	"options": [
+		["Ciudad Autónoma Buenos Aires","La Plata","Lomas de Zamora"],
+		["La Matanza","Lomas de Zamora","General San Martín"],
+		["307.571 km² ","105.436 km²","517.865 km²"],
+		["57","135","28"],
+		["15 625 084 habitantes","27 786 179 habitantes","93 567 864 habitantes"],
+		["Napostá Grande","La Ventana ","Cerro Tres Picos"],
+		["150,578","450,234","367,820"],
+		["45","18","36"],
+		["303.786 km²","102.602 km²","786.143 km²"],
+		["Mapuche","Qichua","Guaraní"],
+		["Salta","Santa Fe","Santiago del Estero"],
+		["1789","1683","1910"],
+		["Asunción","Posadas","Resistencia"],
+		["1","4","2"],
+		["5","7","3"],
+		["Paraná","Bermejo","Río de La Plata"],
+		["750.534 habitantes","4.534.152 habitantes","1.053.466 habitantes"],
+		[" 99.633 km²"," 15.900 km²","150.978 km²"],
+		["El Hoyo","El Bolsón","El Maiten"],
+		["1990","1879","1937"],
+		["Gobernador Costa","Comodoro Rivadavia","Trelew"],
+		["1999","1981","2003"],
+		["Posadas","Rawson","Trelew"],
+		["Trelew","Puerto Madryn","Comodor Rivadavia"],
+		["1949 msnm","2050 msnm","6080 msnm"],
+		["3","5","7"],
+		["26","12","38"],
+		["Colonia Caroya","Alta Gracia","Villa Dolores"],
+		["15. 308. 876 habitantes","3. 308. 876 habitantes","900. 876 habitantes"],
+		["1573","1865","1910"],
+		["Quichua","Mapuche","Guaraní"],
+		["3","5","2"],
+		["Uruguay","Bermejo","Paraguay"],
+		["Rio de La Plata","Paraná","Uruguay"],
+		["","",""],
+		["Paraná","Bermejo","Salado"],
+		["Uruguay","Paraguay","Brasil"],
+		["Brasil","Uruguay","Paraguay"],
+		["Paraná","Gualeguaychu","Concordia"],
+		["Corrientes","Santa Fe","Buenos Aires"],
+		["Buenos Aires","Corrientes","Santa Fe"],
+		["1966","1880","2004"],
+		["9","4","17"],
+		["Parque Nacional Pilcomayo","Parque Nacional Los Glaciares","Parque Nacional Los Alerces."],
+		["Paraguay","Bermejo","Teuquito"],
+		["Pilcomayo","Bermejo","Paraguay"],
+		["Purmamarca","Tilcara","Humahuaca"],
+		["1924","1875","2003"],
+		["Bolivia","Paraguay","Chile"],
+		["Ledesma","Tilcara","Susques"],
+		["Tumbaya","Yavi","Rinconada"],
+		["2","3","6"],
+		["Santa Rosa","Rawson","La Plata"],
+		["Río Salado","Río Colorado","Río Negro"],
+		["6","3","10"],
+		["Parque Nacional Perito Moreno","Parque Nacional Nahuel Huapi","Parque Nacional Lihuél Calel "],
+		["San Luis","Mendoza","Buenos Aires"],
+		["Caldén","Ombú","Ceibo"],
+		[" Parque Nacional San Guillermo","Parque Nacional Talampaya","Parque Nacional Lihue Calel"],
+		["Dique de Anzulón","",""],
+		["Sierra de la Venta","Sierra de Velasco"," Sierras Mahuidas"],
+		["","La vid",""],
+		["Perú","Bolivia","Chile."],
+		["4","2","8"],
+		["Uruguay","Bolivia","Chile."],
+		["8","1","4"],
+		["","La Fiesta Nacional de la Vendimia.",""],
+		["Las Leñas","Chapelco","Catedral"],
+		["","","Villavicencio."],
+		["6959 metros","8848 metros","6960,8 metros"],
+		["5","2","8"],
+		["150","75","275"],
+		["Oberá","Posadas","San Ignacio"],
+		["1","3","2"],
+		["Bermejo","Iguazú","Pilcomayo"]
+	]
+}

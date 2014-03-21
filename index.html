@@ -8,6 +8,9 @@
 		<link rel="stylesheet" href="base.css">
 		<link rel="stylesheet" href="fdl2014.css">
 		<style>
+			#gameSpace {
+				background-image: none;
+			}
 		</style>
 	</head>
 
@@ -29,6 +32,7 @@
 			
 		</div>
 	</div>
+	<!-- <div id="donut" class="absolute box"></div> -->
 
 			
 
@@ -37,18 +41,20 @@
 		<script src="js/jquery.ui.widget.min.js"></script>
 		<script src="js/jquery.tap.js"></script>
 		<script src="js/TweenMax-1.11.5.min.js"></script>
+		<script src="js/ScrambleTextPlugin.min.js"></script>
 		<script src="js/store+json2.min.js"></script>
 		<script src="js/d3.v3.min.js"></script>
 
 		<script src="js/triviaJS.js"></script>
 		<script src="js/fdl.js"></script>
 		<script>
+
 		$(document).ready(function(){
 			var labels = {
 				hiScore: "Record del día: ",
-				title: "preparando preguntas...",
+				title: "",
 				playerScore: "PUNTOS: ",
-				roundUpHeader: "Puntos",
+				roundUpHeader: "",
 				roundUpQuestion: "Respuesta correcta:",
 				roundUpTimebonus: "Bonus por tiempo:",
 				roundUpSum: 'Total:',
@@ -62,55 +68,18 @@
 				gameEnded: 'Cerrar'
 			};
 
-
-
 			$('#mainContainer').fdl({labels:labels});
 
-			// callToAction.click(function(e) {
-			// 	//aca va el zoom del mapa, ojo
-			// 	TweenMax.to(this,0.5,{autoAlpha:0});
-			// 	TweenMax.to(guideSplash,0.5,{autoAlpha:1,delay:0.25});
-			// });
-			// guideSplash.click(function(e) {
-			// 	TweenMax.to(this,0.5,{autoAlpha:0});
-			// 	//aca va el zoom del mapa, ojo
-			// 	TweenMax.to('svg',2,{scale:2,x:00,y:430,ease:Back.easeInOut});
-
-			// 	TweenMax.to(selectSplash,0.5,{autoAlpha:1,delay:1.5});
-			// 	$('#map').on('provinciaclicked', function(evt,provincia) {
-			// 		// console.log(provincia);
-			// 		// var prov = $('.provincia[data-index=');
-			// 		TweenMax.to(triviaContainer,0.5,{
-			// 			autoAlpha:1,
-			// 			onComplete: function(){
-			// 				var miniTrivia = $('<div id="trivia" />').appendTo(triviaContainer);
-			// 				miniTrivia.height('100%');
-			// 				miniTrivia.trivia({
-			// 					questionsFileUrl:'triviafile.json',
-			// 					questionsPerGame:3,
-			// 					scorePerQuestion: 1,
-			// 					useTemplate: false,
-			// 					error: function(evt, data) {
-			// 						console.log(data);
-			// 					},
-			// 					gameReady: function(evt, data) {
-			// 						data.instance.startGame();
-			// 					},
-			// 					gameRestart: function(evt, data) {
-			// 						TweenMax.to(triviaContainer,0.5,{autoAlpha:0, onComplete:function(){
-			// 							miniTrivia.trivia("destroy");
-			// 							triviaContainer.html("");
-			// 							console.log(data);
-			// 							var color = data.score > 1 ? '#2f2' : '#f00';
-			// 							TweenMax.to(provincia,1,{fill:color});
-			// 						}})
-			// 					},
-			// 					labels: labels
-			// 				});
-			// 			}
-			// 		});
-			// 	});
-			// });
+			$('body').keypress(function(){
+				var aa = $('#trivia').data('cg-trivia').tweenRoot;
+				if(aa.paused()) {
+					aa.resume();
+					console.log('tweenRoot is playing');
+				}else{
+					aa.pause();
+					console.log('tweenRoot is paused');
+				}
+			});
 		})
 		</script>
 
