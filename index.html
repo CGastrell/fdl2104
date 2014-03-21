@@ -16,20 +16,30 @@
 
 	<body>
 	<div id="mainContainer" class="absolute fullscreen">
-		<div id="map" class="absolute" style="width:480px;height:980px;top:100px;"></div>
-		<div id="statusBar" class="absolute" style="width:100%;height:100px;background-image:url(images/header.jpg);background-repeat:no-repeat;">
-			<p class="hiScore">Record: </p>
-		</div>
-		<div id="callToAction" class="splash absolute" style="width:1450px;height:988px;left:480px;top:100px;background-image:url(images/callToAction.jpg)">
+		<div id="map" class="absolute" style=""></div>
+		<div id="callToAction" class="splash absolute">
+			<img class="absolute logo" src="images/logo.png" />
+			<p class="absolute intro">Probá tus conocimientos!</p>
+			<p class="absolute paso1">Seleccioná una provincia del mapa</p>
+			<p class="absolute paso2">Obtené al menos 2 estrellas para avanzar</p>
+			<p class="absolute paso3">Completá todas las provincias</p>
+			<div id="startContainer" class="absolute">
+				<p class="absolute btn">Comenzar</p>
+			</div>
 		</div>
 		<div id="guideSplash" class="splash absolute box">
-			Selecciona una provincia del mapa<br />
+			Seleccioná una provincia del mapa<br />
 			Suma al menos 2 estrellas para seguir avanzando
 		</div>
-		<div id="selectSplash" class="splash absolute" style="width:1450px;height:988px;left:480px;top:100px;background-image:url(images/selecciondeprov.jpg)">
+		<div id="selectSplash" class="splash absolute">
+			<p class="absolute selecciona">Seleccioná una provincia del mapa para comenzar</p>
 		</div>
-		<div id="triviaContainer" class="splash absolute fullscreen" style="background:rgba(0,0,0,0.5);">
+		<div id="triviaContainer" class="splash absolute fullscreen" style="">
 			
+		</div>
+		<div id="statusBar" class="absolute" style="">
+			<img class="absolute logo" src="images/logoH.png" />
+			<p class="hiScore">Puntaje más alto: 0</p>
 		</div>
 	</div>
 	<!-- <div id="donut" class="absolute box"></div> -->
@@ -67,7 +77,9 @@
 				finalScore: 'Tu puntaje final es: ',
 				gameEnded: 'Cerrar'
 			};
-
+			$('img.logo','#statusBar').centrar({vertical:false});
+			$('p.selecciona','#selectSplash').centrar({vertical:false});
+			
 			$('#mainContainer').fdl({labels:labels});
 
 			$('body').keypress(function(){

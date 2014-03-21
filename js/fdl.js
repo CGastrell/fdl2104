@@ -11,10 +11,15 @@
 
 		var container = this.parent();
 		var n = {
-			top: settings.vertical ? (container.innerHeight() - this.outerHeight()) / 2 : this.offset().top,
-			left: settings.horizontal ? (container.innerWidth() - this.outerWidth()) /2 : this.offset().left
+			top: settings.vertical ? (container.innerHeight() - this.outerHeight()) / 2 : this.css("top"),
+			left: settings.horizontal ? (container.innerWidth() - this.outerWidth()) /2 : this.css("left")
 		}
-		return this.offset(n);
+		// console.log(this);
+		// console.log(container);
+		// console.log(container.innerWidth());
+		// console.log(this.outerWidth());
+		// console.log(n);
+		return this.css(n);
 	};
 
 }( jQuery ));
@@ -241,6 +246,7 @@
 							//la foto que corresponde a la imagen
 							imgQuestion.attr('src','images/fotos/6.png').appendTo(data.instance.gameSpace);
 							TweenMax.to(imgQuestion,0.25,{autoAlpha:1,delay:2});
+							$('#score',data.instance.scoreBox).html(_this.score+"/70");
 						},
 						afterShowQuestion: function(evt, data) {
 							respondido = false;
@@ -266,11 +272,13 @@
 							TweenMax.to(imgProv,0.25,{autoAlpha:0});
 							TweenMax.to(imgQuestion,0.25,{autoAlpha:0});
 							respondido = true;
-							if(data.correcto) {
-								this.score += 1;
-								if(this.score > this.hiScore) {
-									store.set('fdl_hiScore',this.score);
-									$('p.hiScore',this.statusBar).html("Puntaje más alto: "+this.hiScore);
+								console.log(data);
+							if(data.correct) {
+								_this.score += 1;
+								if(_this.score > _this.hiScore) {
+									_this.hiScore = _this.score;
+									store.set('fdl_hiScore',_this.score);
+									$('p.hiScore',_this.statusBar).html("Puntaje más alto: "+_this.hiScore);
 								}
 							}
 						},

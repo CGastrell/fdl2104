@@ -1,6 +1,7 @@
 @font-face {
 	font-family: 'Roboto Condensed';
 	src: url('font/RobotoCondensed-Bold.ttf') format('truetype');
+	text-rendering: optimizelegibility;
 }
 
 body, html {
@@ -81,8 +82,86 @@ body, html {
 			}
 
 	#statusBar{width:100%;height:100px;background-image:url(images/header.jpg);background-repeat:no-repeat;}
-	#callToAction{width:1450px;height:988px;left:480px;top:100px;background-image:url(images/callToAction.jpg)}
-	#selectSplash{width:1450px;height:988px;left:480px;top:100px;background-image:url(images/selecciondeprov.jpg)}
+	#statusBar img{height: 140px; top:10px;}
+
+	#callToAction{width:1450px;height:988px;left:480px;top:100px;color:white;
+		text-shadow:0 2px 4px rgba(0,0,0,0.8);font-size: 40px;}
+	#callToAction img{
+		top:50px;
+		left:30%;
+		height: 400px ;
+
+	}
+
+	#callToAction .intro{
+		font-size: 85px;
+		right: 58px;
+		top: 100px;display:none;
+	}
+
+	#callToAction .paso1 {
+		  left:0px;
+		  top:479px;
+		  width: 1440px;
+		  height: 84px;
+		  background:#E24243 url(images/paso1.png) 15px 0;
+		  background-repeat: no-repeat;
+		  box-shadow:0 47px 37px -20px rgba(96,19,23,0.6) inset;
+		  border-bottom: 1px solid rgba(96,19,23,0.4);
+		  padding: 38px 15px 0 545px;}
+	#callToAction .paso2 {
+		  left:0px;
+		  top:602px;
+		  width: 1440px;
+		  height: 84px;
+		  background:#E1A444 url(images/paso2.png) 15px 0;
+		  background-repeat: no-repeat;
+		  box-shadow:0 47px 37px -20px rgba(124,86,36,0.8) inset;
+		  border-bottom: 1px solid rgba(124,86,36,0.4) ;
+		  padding: 38px 15px 0 545px;}
+	#callToAction .paso3 {
+			left:0px;
+			top:725px;
+			width: 1440px;
+			height: 84px;
+			background:#DDD543 url(images/paso3.png) 15px 0;
+			background-repeat: no-repeat;
+			box-shadow:0 47px 37px -20px rgba(91,86,17,0.8) inset;
+			border-bottom: 1px solid rgba(91,86,17,0.4);
+			padding: 38px 15px 0 545px;
+		}
+
+	#startContainer {
+		left:0px;
+		top:848px;
+		width: 1440px;
+		height: 131px;
+		background:#A7CF4B;
+		background-repeat: no-repeat;
+		box-shadow:0 47px 37px -20px rgba(87,114,45,0.8) inset;
+		border-bottom: 1px solid rgba(87,114,45,0.4);}
+
+	#startContainer .btn {
+		background: #33669A;
+		border:2px solid #48A2DA ;
+		border-radius: 15px;
+		padding: 5px 25px;
+		top:25px;
+		left:45%;
+	}
+
+
+	#selectSplash{width:1450px;height:988px;left:480px;top:100px;}
+	#selectSplash .selecciona{
+		width: 600px;
+		font-size: 60px;
+		color:white;
+		text-shadow:0 2px 4px rgba(0,0,0,0.8);
+		top:300px;
+	}
+	#selectSplash .logo{
+		display: none;
+	}
 
 	#statusBar .hiScore{
 		position: absolute;
