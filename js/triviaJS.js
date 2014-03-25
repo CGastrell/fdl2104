@@ -170,9 +170,9 @@
 				this.option3,
 				this.questionBox,
 				this.scoreBox
-			],{autoAlpha:1,scale:1,transformOrigin:"top center"});
+			],{autoAlpha:1,scale:1,transformOrigin:"center center"});
 			// tl.add(TweenMax.from(this.questionBadge, 1, {delay: 0.25, autoAlpha: 0, scale:3, ease: Power4.easeIn}));
-			tl.add(TweenMax.from(this.questionBox,0.75,{autoAlpha:0,rotationX: -90, ease:Elastic.easeOut}));
+			tl.from(this.questionBox,0.75,{autoAlpha:0,rotationX: -90, delay:0.5, ease:Elastic.easeOut});
 			tl.add(
 				TweenMax.staggerFrom(
 					[
@@ -182,7 +182,7 @@
 						this.scoreBox
 					],
 					0.75,
-					{autoAlpha:0, rotationX: -90,ease: Elastic.easeOut, delay:1.5},
+					{autoAlpha:0, rotationX: -180,ease: Elastic.easeOut, delay:1.5},
 					// {autoAlpha: 0,scale:0.2,ease: Back.easeOut, delay:1},
 					0.15
 				)

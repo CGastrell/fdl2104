@@ -59,10 +59,8 @@
 			labels: {}
 		},
 		_create: function() {
-			$('.box', this.element).centrar();
 
-			//todos los splash ocultos... ojo
-			TweenMax.set('#mainContainer > div',{autoAlpha:0});
+			TweenMax.set(this.element.children(),{autoAlpha:0});
 
 			this.callToAction = $('#callToAction', this.element);
 			this.guideSplash = $('#guideSplash', this.element);
@@ -73,7 +71,6 @@
 			this.hiScore = parseInt(store.get('fdl_hiScore')) || 0;
 			$('p.hiScore', this.statusBar).html("Puntaje más alto: "+this.hiScore);
 
-			TweenMax.set(this.statusBar,{autoAlpha:1});
 
 			var _this = this;
 			$.when(
@@ -100,6 +97,9 @@
 					console.log(arguments);
 				}
 			);
+		},
+		_init: function() {
+			TweenMax.to(this.statusBar,0.25,{autoAlpha:1});
 		},
 		_shuffleArray: function(o){ 
 			for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x){}
@@ -157,16 +157,26 @@
 			var tl = new TimelineMax({onComplete:function(){
 				_this.callToAction.one('click', $.proxy(_this._startRound, _this));
 			}})
-			tl.set('.provincia',{autoAlpha:0,fill:'#fea'});
+			tl.set('.provincia',{autoAlpha:0,fill:'#f00'});
+			tl.set(this.callToAction,{perspective:700,transformOrigin:"center center"});
+			tl.set(this.callToAction.children(),{transformOrigin: "center center"});
+
 			tl.staggerTo([_this.mapContainer, _this.callToAction],1,{autoAlpha:1},0.5);
 			tl.staggerTo('.provincia',0.5,{autoAlpha:0.5,fill:'#fff',ease:RoughEase.ease},0.05);
+			tl.from($('.logo','#callToAction'),1.5,{autoAlpha:0, rotationX: -180,ease: Elastic.easeOut},"-=1");
 			tl.set('.provincia',{transformOrigin:"240px 973px",fill: "#fff"});
+
 			// $.each($('.provincia'), function(i,e){
 			// 	$(e).data('respondida',false);
 			// 	TweenMax.from(e,2.5,{rotation:((Math.random() < 0.5) ? 90 : -90),ease:Elastic.easeOut,delay:0.5 + i * 0.06});
 			// 	// TweenMax.from(e,2.4,{rotation:90,ease:Elastic.easeOut,delay:0.5 + i * 0.06});
 			// 	// TweenMax.from(e,2.4,{y:-1000,ease:Elastic.easeOut,delay:0.5 + i * 0.06});
 			// });
+			tl.staggerFrom(
+				$('#callToAction').children().not(':first'),
+				1,
+				{autoAlpha:0, rotationX: -180,ease: Elastic.easeOut},
+				0.15);
 		},
 		// _showGuideSplash: function() {
 		// 	var _this = this;
@@ -256,10 +266,10 @@
 							var tl = new TimelineMax({onComplete: function() {
 								timeDonut.remove();
 								if(!respondido)
-									data.instance.respond('rrr',true,'Voce a perdutto ma uma falta da tempo!');
+									data.instance.respond('rrr',true,'Se acabó el tiempo :(');
 							}});
 							tl.set(timeDonut,{transformOrigin:"center center"});
-							tl.add(_this._makeDonutTimer('#donut',5));
+							tl.add(_this._makeDonutTimer('#donut',5.5));
 							tl.add(TweenMax.to(timeDonut,0.2,{scale:1.3,yoyo:true,repeat:1,ease:Back.easeIn}),1);
 							tl.add(TweenMax.to(timeDonut,0.2,{scale:1.3,yoyo:true,repeat:1,ease:Back.easeIn}),2);
 							tl.add(TweenMax.to(timeDonut,0.2,{scale:1.3,yoyo:true,repeat:1,ease:Back.easeIn}),3);
@@ -288,6 +298,7 @@
 						gamespaceBuilt: function(evt, data) {
 							$('#hiScoreBox',miniTrivia).remove();
 							data.instance.gameSpace.append(imgProv);
+							data.instance.imgProv = imgProv;
 							TweenMax.set(imgProv,{autoAlpha:0});
 						},
 						gameEnded: function(evt, data) {
@@ -310,6 +321,12 @@
 							console.log('trivia game started');
 						},
 						gameRestart: function(evt, data) {
+							if(data.score < 2) {
+								$('p.selecciona',_this.selectSplash).html("Seleccioná una provincia del mapa para comenzar");
+								TweenMax.to(_this.selectSplash,0.25,{autoAlpha:0});
+							}else{
+								$('p.selecciona',_this.selectSplash).html("Seleccioná una provincia del mapa para continuar");
+							}
 							TweenMax.to(_this.triviaContainer,1,{autoAlpha:0, onComplete:function(){
 								miniTrivia.trivia("destroy");
 								_this.triviaContainer.html("");
@@ -328,12 +345,10 @@
 									}
 								}});
 								tl.set(provincia,{transformOrigin: "center center"});
-								tl.to(provincia, 1.5, {scale: 2});
-								tl.to(provincia,1.5,{fill:color},0);
+								tl.to(provincia, 1, {scale: 2, fill:color});
 								tl.to(provincia,0.5,{scale:1,ease:Bounce.easeOut});
 								if(data.score < 2) {
 									tl.staggerTo('.provincia',0.5,{autoAlpha:0,fill:'#f00',ease:RoughEase.ease},0.05);
-									tl.to(_this.selectSplash,0.25,{autoAlpha:0});
 									tl.to(_this.svg,1,{scale:1,x:0,y:0,ease:Back.easeInOut});
 								}
 								//aca hay que volver a la seleccion, argegar la prov a un array
