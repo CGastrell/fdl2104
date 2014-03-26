@@ -216,6 +216,7 @@
 			// console.log(preguntas);
 			var _this = this;
 			var provincia = $('.provincia[data-index='+category+']');
+			var stopThis = false;
 			provincia.data('respondida',true);
 			var respondido = false;
 			// _this.options.labels.finalScore = "Tu puntaje para el desafío "
@@ -250,6 +251,7 @@
 						useTemplate: false,
 						mindTheHiScore: false,
 						beforeShowQuestion: function(evt, data) {
+							respondido = false;
 							//cargar imagen de pregunta
 							TweenMax.to(imgProv,0.25,{autoAlpha:1});
 							//aca hay que llamar al data.question.id o lo que sea que identifique
@@ -259,30 +261,35 @@
 							$('#score',data.instance.scoreBox).html(_this.score+"/70");
 						},
 						afterShowQuestion: function(evt, data) {
-							respondido = false;
+							console.log('Event: '+evt.type);
 							var timeDonut = $('<div id="donut" class="absolute" />').appendTo(miniTrivia);
 							timeDonut.width(100).height(100).centrar({vertical:false});
 
 							var tl = new TimelineMax({onComplete: function() {
 								timeDonut.remove();
+								console.log('Donut tween over (timer). Donuts in DOM: '+$('#donut').length);
 								if(!respondido)
 									data.instance.respond('rrr',true,'Se acabó el tiempo :(');
 							}});
 							tl.set(timeDonut,{transformOrigin:"center center"});
-							tl.add(_this._makeDonutTimer('#donut',5.5));
+							tl.add(_this._makeDonutTimer('#donut',5));
+							tl.add(TweenMax.to(timeDonut,0.2,{scale:1.3,yoyo:true,repeat:1,ease:Back.easeIn}),0);
 							tl.add(TweenMax.to(timeDonut,0.2,{scale:1.3,yoyo:true,repeat:1,ease:Back.easeIn}),1);
 							tl.add(TweenMax.to(timeDonut,0.2,{scale:1.3,yoyo:true,repeat:1,ease:Back.easeIn}),2);
 							tl.add(TweenMax.to(timeDonut,0.2,{scale:1.3,yoyo:true,repeat:1,ease:Back.easeIn}),3);
 							tl.add(TweenMax.to(timeDonut,0.2,{scale:1.3,yoyo:true,repeat:1,ease:Back.easeIn}),4);
+							tl.add('end');
+							tl.add(TweenMax.to(timeDonut,0.25,{scale:0,autoAlpha:0,ease:Back.easeIn}));
 							data.instance.tweenRoot = tl;
 						},
 						answered: function(evt, data) {
-							TweenMax.set('#donut',{transformOrigin:"center center"});
-							TweenMax.to('#donut',0.25,{scale:0,autoAlpha:0,ease:Back.easeIn});
+							console.log('Event: '+evt.type);
+							// console.log(data.instance.tweenRoot);
+							respondido = true;
+							data.instance.tweenRoot.gotoAndPlay("end");
+							// TweenMax.to('#donut',0.25,{scale:0,autoAlpha:0,ease:Back.easeIn});
 							TweenMax.to(imgProv,0.25,{autoAlpha:0});
 							TweenMax.to(imgQuestion,0.25,{autoAlpha:0});
-							respondido = true;
-								console.log(data);
 							if(data.correct) {
 								_this.score += 1;
 								if(_this.score > _this.hiScore) {
@@ -296,6 +303,7 @@
 							console.log(data);
 						},
 						gamespaceBuilt: function(evt, data) {
+							console.log("Event: " + evt.type)
 							$('#hiScoreBox',miniTrivia).remove();
 							data.instance.gameSpace.append(imgProv);
 							data.instance.imgProv = imgProv;
@@ -314,11 +322,14 @@
 							}
 						},
 						gameReady: function(evt, data) {
-							console.log('preguntas de '+provincia.data('index'));
+							if(stopThis) return false;
+							stopThis = true;
+							console.log("Event: "+evt.type);
+							console.log('Trivia de '+_this.provsCatalog[category]);
 							data.instance.startGame();
 						},
 						gameStarted: function(evt, data) {
-							console.log('trivia game started');
+							console.log('Mini trivia game started');
 						},
 						gameRestart: function(evt, data) {
 							if(data.score < 2) {
@@ -329,8 +340,8 @@
 							}
 							TweenMax.to(_this.triviaContainer,1,{autoAlpha:0, onComplete:function(){
 								miniTrivia.trivia("destroy");
+								miniTrivia = null;
 								_this.triviaContainer.html("");
-								console.log(data);
 								var color = data.score > 1 ? '#2f2' : '#f00';
 								var tl = new TimelineMax({onComplete: function(){
 									if(data.score < 2) {
@@ -396,7 +407,7 @@
 
 			var angle = {end:0};
 
-			return TweenMax.to(angle,seconds,{end:360,ease:Linear.easeNone,onUpdate: function(){
+			return TweenMax.to(angle,seconds,{end:360, ease:Linear.easeNone, onUpdate: function(){
 				arc.endAngle(angle.end * (Math.PI / 180));
 				timer.attr('d',arc);
 			}});

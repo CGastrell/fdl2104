@@ -3,7 +3,14 @@
 	src: url('font/RobotoCondensed-Bold.ttf') format('truetype');
 	text-rendering: optimizelegibility;
 }
-
+div, p {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
 body, html {
 				margin: 0;
 				padding: 0;

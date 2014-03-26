@@ -273,10 +273,11 @@
 			this.roundPoints += timePoints;
 			this.roundPoints += questionPoints;
 			this._trigger('answered',null,{
-				correct:correcto,
-				answer:answer,
-				question:this.currentQuestion,
-				score:{
+				correct: correcto,
+				answer: answer,
+				instance: this,
+				question: this.currentQuestion,
+				score: {
 					question: questionPoints,
 					timebonus: timePoints,
 					subtotal: this.roundPoints
