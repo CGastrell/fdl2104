@@ -146,7 +146,7 @@
 		_loadQuestions: function(callback) {
 			var _this = this;
 			var d = $.Deferred(function(defer){
-				$.getJSON('triviafile2.json').then(defer.resolve, defer.reject);
+				$.getJSON('triviafile.json').then(defer.resolve, defer.reject);
 			}).promise();
 			return d.done(callback);
 		},
