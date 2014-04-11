@@ -122,6 +122,7 @@
 				if(e.options.indexOf(e.correctAnswer) < 0) {
 					console.log('La respuesta correcta no corresponde a ninguna de las opciones');
 					console.log('"'+e.correctAnswer+'"');
+					console.log('"'+e.id+'"');
 					console.log(e.options);
 				}
 			});
@@ -146,7 +147,7 @@
 		_loadQuestions: function(callback) {
 			var _this = this;
 			var d = $.Deferred(function(defer){
-				$.getJSON('triviafile.json').then(defer.resolve, defer.reject);
+				$.getJSON('triviafile3.json').then(defer.resolve, defer.reject);
 			}).promise();
 			return d.done(callback);
 		},
