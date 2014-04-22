@@ -355,7 +355,7 @@
     {
       "id":44,
       "question":"¿Cómo se denomina al Parque Nacional ubicado en la Provincia de Formosa?",
-      "correctAnswer":"Parque Nacional Pilcomayo",
+      "correctAnswer":"P.N. Pilcomayo",
       "answerTip":"El Parque Nacional se denomina Río Pilcomayo. Fue creado en 1951 y se halla a 5 km de la localidad de Laguna Blanca. Tiene una extensión de 51.889 hectáreas y su centro geográfico se halla en las coordenadas 25°04′00″S 58°07′00″O.",
       "provinciaId":20,
       "provinciaName":"Formosa"
@@ -459,7 +459,7 @@
     {
       "id":57,
       "question":"¿Con que Parque Nacional cuenta la provincia de La Pampa?",
-      "correctAnswer":"Parque Nacional Lihuél Calel ",
+      "correctAnswer":"P.N. Lihuél Calel ",
       "answerTip":"La provincia de La Pampa cuenta con el parque nacional Lihué Calel. Tiene 9.901 hectareas en el centro sur de la provincia de La Pampa, departamento Lihuel Calel. Fue creado en 1977. El decreto N.° 2149/90 del 10 de octubre de 1990 designó a un sector del parque nacional como reserva natural estricta. Coordenadas  38°01′S 65°32′O",
       "provinciaId":5,
       "provinciaName":"La Pampa"
@@ -483,7 +483,7 @@
     {
       "id":60,
       "question":"¿Con qué parque nacional cuenta la provincia de La Rioja?",
-      "correctAnswer":"Parque Nacional Talampaya",
+      "correctAnswer":"P.N. Talampaya",
       "answerTip":"La provincia de La Rioja cuenta con el parque nacional Talampaya. Es una reserva natural y uno de los siete \"Patrimonios de la Humanidad\" declarados por la Unesco en Argentina. Se encuentra ubicado en el centro-oeste de la provincia de La Rioja. Fue creado en 1975 como parque provincial con el objetivo de proteger importantes yacimientos arqueológicos y paleontológicos de la zona. Coordenadas  30°0′S 68°0′O",
       "provinciaId":13,
       "provinciaName":"La Rioja"
@@ -547,7 +547,7 @@
     {
       "id":68,
       "question":"¿Qué Fiesta Nacional se celebra en la provincia de Mendoza, la cual está relacionada con la principal actividad agrícola de la provincia?",
-      "correctAnswer":"La Fiesta Nacional de la Vendimia.",
+      "correctAnswer":"De la Vendimia.",
       "answerTip":"La Fiesta Nacional de la Vendimia es una festividad tradicional y popular originaria de la provincia de Mendoza.Refleja la celebración de la uva transformada en vino a través del esfuerzo que los viñateros llevan a cabo en las viñas. Se celebra durante los primeros días del mes de marzo.",
       "provinciaId":7,
       "provinciaName":"Mendoza"
@@ -691,7 +691,7 @@
     {
       "id":86,
       "question":"¿Qué Parque Nacional comparte Río Negro con la provincia del Neuquén?",
-      "correctAnswer":"Parque Nacional Nahuel Huapi",
+      "correctAnswer":"P.N. Nahuel Huapi",
       "answerTip":"El parque nacional Nahuel Huapi es compartido con la provincia de Neuquén.Se ubica al sudoeste de la provincia del Neuquén y al oeste de la de Río Negro. El área tiene un total de 709.474 hectáreas y es el más antiguo de los parques nacionales, ya que fue creado por el gobierno argentino en el año 1934. Coordenadas  41°08′S 71°17′O",
       "provinciaId":4,
       "provinciaName":"Río Negro"
@@ -779,7 +779,7 @@
     {
       "id":97,
       "question":"¿En cuál departamento se encuentra ubicado el parque provincial Valle de la Luna?",
-      "correctAnswer":"Departamento Valle Fértil",
+      "correctAnswer":"Valle Fértil",
       "answerTip":"El Parque provincial  de Ischigualasto o Valle de la Luna, se encuentra en el Departamento Valle Fértil. Es un área protegida de 275.369 hectáreas, célebre a nivel científico, ya que resguarda una importante reserva paleontológica. Coordenadas: 30°40′00″S 67°26′00″O",
       "provinciaId":11,
       "provinciaName":"San Juan"
@@ -1150,7 +1150,7 @@
     ["1966","1880","2004"  ],
     ["Uruguay","Paraguay","Brasil"  ],
     ["9","4","17"  ],
-    ["Parque Nacional Pilcomayo","Parque Nacional Los Glaciares","Parque Nacional Los Alerces."  ],
+    ["P.N. Pilcomayo","P.N. Los Glaciares","P.N. Los Alerces"  ],
     ["Paraguay","Bermejo","Teuquito"  ],
     ["Pilcomayo","Bermejo","Paraguay"  ],
     ["Trópico de Capricornio","Trópico de Cáncer","Meridiano de Greenwich"  ],
@@ -1163,10 +1163,10 @@
     ["Santa Rosa","Rawson","La Plata"  ],
     ["Río Salado","Río Colorado","Río Negro"  ],
     ["6","3","10"  ],
-    ["Parque Nacional Perito Moreno","Parque Nacional Nahuel Huapi","Parque Nacional Lihuél Calel "  ],
+    ["P.N. Perito Moreno","P.N. Nahuel Huapi","P.N. Lihuél Calel"  ],
     ["San Luis","Mendoza","Buenos Aires"  ],
     ["Caldén","Ombú","Ceibo"  ],
-    [" Parque Nacional San Guillermo","Parque Nacional Talampaya","Parque Nacional Lihue Calel"  ],
+    ["P.N. San Guillermo","P.N. Talampaya","P.N. Lihue Calel"  ],
     ["Dique de Anzulón","Dique Los Sauces","Dique de Chanianmuyo"  ],
     ["Sierra de la Venta","Sierra de Velasco"," Sierras Mahuidas"  ],
     ["Nogal","La vid","Olivo"  ],
@@ -1174,7 +1174,7 @@
     ["4","2","8"  ],
     ["Uruguay","Bolivia","Chile"  ],
     ["8","1","4"  ],
-    ["Fiesta Nacional del Olivo","La Fiesta Nacional de la Vendimia.","Fiesta Nacional del Tomate"  ],
+    ["Del Olivo","De la Vendimia.","Del Tomate"  ],
     ["Las Leñas","Chapelco","Catedral"  ],
     ["Termas de Cacheurta","Termas de Reyes","Villavicencio"  ],
     ["6959 metros","8848 metros","6960,8 metros"  ],
@@ -1192,7 +1192,7 @@
     ["Volcán Domuyo","Cerro Guañacó","Volcán Tromen"  ],
     ["General Roca ","Cipolletti","Viedma"  ],
     ["Villa Regina ","General Roca ","Cipolletti"  ],
-    ["Parque Nacional Los Arrayanes ","Parque Nacional Lanín ","Parque Nacional Nahuel Huapi"  ],
+    ["P.N. Los Arrayanes ","P.N. Lanín ","P.N. Nahuel Huapi"  ],
     ["Golfo San Matías ","Península Valdez ","Golfo San Jorge"  ],
     ["Río Negro ","Río Colorado ","Río Limay"  ],
     ["Tronador ","Campanario"," López"  ],
@@ -1203,7 +1203,7 @@
     ["Río Colorado","Río Juramento","Río Negro"  ],
     ["Jujuy","Chaco","Tucumán"  ],
     ["Chile","Perú","Bolivia"  ],
-    ["Departamento Valle Fértil","Departamento Zonda","Departamento 9 de Julio"  ],
+    ["Valle Fértil","Zonda","9 de Julio"  ],
     ["Calingasta","Caucete","Jáchal"  ],
     ["Mendoza","La Rioja","Buenos Aires"  ],
     ["Ullum","Caracoles","Cuesta del Viento"  ],
@@ -1232,15 +1232,15 @@
     ["27","5","17"  ],
     ["1550","1810","1917"  ],
     ["Buenos Aires","Córdoba","Salta"  ],
-    ["1.002.445 km² ","307.571 km² ","105.571 km² "  ],
-    ["Punta Dungeness","Cabo San Pío","Península Valdez "  ],
+    ["1.002.445 km²","307.571 km²","105.571 km²"  ],
+    ["Punta Dungeness","Cabo San Pío","Península Valdez"  ],
     ["Falkland","Martín García","Gran Malvina y Soledad"  ],
     ["4","12","24"  ],
     ["Ushuaia","Río Gallegos","Rawson"  ],
     ["Yagán","Mapuche","Guaraní"  ],
     ["El Jardín de la República","La Linda","La tacita de Plata"  ],
     ["Cerro Uritorco","Cerro San Javier","Cerro San Bernardo"  ],
-    ["22.524 km²","307.571 km² ","1.002.445 km² "  ],
+    ["22.524 km²","307.571 km²","1.002.445 km²"  ],
     ["Cerro San Javier","Cerro del Bolsón","Cerro San Bernardo"  ],
     ["Río Salí","Río Marapa","Río Chico"  ],
     ["Salta","Córdoba","Formosa"  ]

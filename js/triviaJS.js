@@ -196,6 +196,7 @@
 			caption = customCaption || caption;
 			this.responseSplash.find('p.result').first().html(caption);
 			this.responseSplash.find('p.resultTip').first().html(this.currentQuestion.answerTip);
+			this.roundUpDiv.html('<img src="images/mapas/' + this.currentQuestion.id + '.jpg" />');
 
 			var roundUpLabelHeader = $('.roundUpLabelHeader', this.roundUpDiv);
 			var roundUpLabelQuestion = $('.roundUpLabelQuestion', this.roundUpDiv);

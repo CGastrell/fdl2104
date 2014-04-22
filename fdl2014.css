@@ -184,3 +184,64 @@ body, html {
 		padding-right: 60px;
 		min-width: 500px;
 	}
+	#responseSplash > p.resultTip {
+		float: right;
+		width: 60%;
+		margin: 0 5%;
+	}
+	#responseSplash .roundUp {
+		float: left;
+		width: 30%;
+	}
+	.roundUp img {
+		width: 100%;
+	}
+
+
+#scoreBox2{
+position: absolute;
+top: 744px;
+left: 0px;
+background: url(images/scoreBox2.jpg);
+height: 236px;
+width: 1440px;
+color: #758C39;
+background-repeat: no-repeat;
+background-color: #A9CA55;
+}
+#scoreBox2 #score{
+  position: absolute;
+  top: 116px;
+  left:520px;
+  color:#758C39;
+  text-align: right;
+  font-weight: bold;
+  font-size: 83px;
+  width: 240px;
+}
+
+#endContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:1920px;
+	height: 1080px;
+	background-color: rgba(0,0,0,0.6);
+}
+
+#endSplash2 {
+	position: absolute;
+	width: 960px;
+	height: 540px;
+	background-image: url(images/theend.png);
+}
+
+#endSplash2 #grandTotal {
+position: absolute;
+right: 482px;
+top: 314px;
+font-size: 68px;
+color: white;
+text-align: right;
+text-shadow: 3px 4px 8px rgba(0,0,0,0.4);
+}

@@ -28,6 +28,7 @@
 	$.widget("cg.fdl",{
 		score:0,
 		hiScore:0,
+		provinciasCompletadas: 0,
 		provsCatalog:[
 			"Tierra del Fuego, Antártida e Islas del Atlántico Sur",//0
 			"Santa Cruz",
@@ -68,6 +69,7 @@
 			this.triviaContainer = $('#triviaContainer', this.element);
 			this.mapContainer = $('#map', this.element);
 			this.statusBar = $('#statusBar', this.element);
+			this.endSplash = $('#endContainer', this.element);
 			this.hiScore = parseInt(store.get('fdl_hiScore')) || 0;
 			$('p.hiScore', this.statusBar).html("Puntaje más alto: "+this.hiScore);
 
@@ -154,6 +156,8 @@
 		startGame: function() {
 			var _this = this;
 			this.score = 0;
+			this.provinciasCompletadas = 0;
+			$('#score','#scoreBox2').html("0/70");
 			$('.provincia').data('respondida',false);
 			var tl = new TimelineMax({onComplete:function(){
 				_this.callToAction.one('click', $.proxy(_this._startRound, _this));
@@ -193,6 +197,7 @@
 		_restart: function() {
 			TweenMax.to(this.svg,1,{scale:1,x:0,y:0,ease:Back.easeInOut});
 			TweenMax.to(this.selectSplash,0.5,{autoAlpha:0});
+			this.provinciasCompletadas = 0;
 			this.startGame();
 		},
 		_startRound: function() {
@@ -257,7 +262,7 @@
 							TweenMax.to(imgProv,0.25,{autoAlpha:1});
 							//aca hay que llamar al data.question.id o lo que sea que identifique
 							//la foto que corresponde a la imagen
-							imgQuestion.attr('src','images/fotos/6.png').appendTo(data.instance.gameSpace);
+							imgQuestion.attr('src','images/fotos/'+data.question.id+'.jpg').appendTo(data.instance.gameSpace);
 							TweenMax.to(imgQuestion,0.25,{autoAlpha:1,delay:2});
 							$('#score',data.instance.scoreBox).html(_this.score+"/70");
 						},
@@ -270,7 +275,7 @@
 								timeDonut.remove();
 								console.log('Donut tween over (timer). Donuts in DOM: '+$('#donut').length);
 								if(!respondido)
-									data.instance.respond('rrr',true,'Se acabó el tiempo :(');
+									data.instance.respond('rrr',true,'Se acabó el tiempo!');
 							}});
 							tl.set(timeDonut,{transformOrigin:"center center"});
 							tl.add(_this._makeDonutTimer('#donut',5));
@@ -333,10 +338,31 @@
 							console.log('Mini trivia game started');
 						},
 						gameRestart: function(evt, data) {
+							var gameComplete = false;
+							_this.provinciasCompletadas++;
+							if(_this.provinciasCompletadas >= _this.provsCatalog.length) {
+								// $('p.selecciona',_this.selectSplash).html("FELICITACIONES!!!");
+								gameComplete = true;
+								$('#grandTotal',_this.endSplash).html(_this.score);
+								TweenMax.set(_this.endSplash,{autoAlpha:1});
+								TweenMax.to(_this.endSplash,0.25,{autoAlpha:0,onComplete:function endIt(){
+									//OJO ACAAAAAAAAAAAAA falta esconder el roundSplash o algo asi
+									TweenMax.from($('#endSplash2',_this.endSplash),0.25,{y:-1000,ease:Back.easeOut});
+									_this.endSplash.one('click',function(){
+										var tl2 = new TimelineMax({onComplete:function(){
+											_this.startGame();
+										}});
+										tl2.to(_this.endSplash,1,{autoAlpha:0});
+										tl2.staggerTo('.provincia',0.5,{autoAlpha:0,fill:'#f00',ease:RoughEase.ease},0.05);
+										tl2.to(_this.svg,1,{scale:1,x:0,y:0,ease:Back.easeInOut});
+									});
+								}});
+							}
 							if(data.score < 2) {
 								$('p.selecciona',_this.selectSplash).html("Seleccioná una provincia del mapa para comenzar");
 								TweenMax.to(_this.selectSplash,0.25,{autoAlpha:0});
 							}else{
+								$('#score','#scoreBox2').html(_this.score+"/70");
 								$('p.selecciona',_this.selectSplash).html("Seleccioná una provincia del mapa para continuar");
 							}
 							TweenMax.to(_this.triviaContainer,1,{autoAlpha:0, onComplete:function(){
