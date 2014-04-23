@@ -970,7 +970,7 @@
     },
     {
       "id":121,
-      "question":"¿Con cuántas provincias limita la provincia de Santiago del Estero?:  ",
+      "question":"¿Con cuántas provincias limita la provincia de Santiago del Estero?",
       "correctAnswer":"6",
       "answerTip":"Santiago del Estero limita con 6 (seis) provincias: al noroeste con la Provincia de Salta, al norte y noreste con la Provincia del Chaco, al sudeste con Provincia de Santa Fe, al sur con Córdoba y al oeste con Catamarca y Tucumán.",
       "provinciaId":16,
@@ -1219,7 +1219,7 @@
     ["Perú","Chile","Bolivia"  ],
     ["250 Km²","700 Km²","1050 Km²"  ],
     ["1981","1937","2001"  ],
-    ["Chubut","Tierra del Fuego, Antártida e Islas del Atlántico Sur","Tucumán"  ],
+    ["Chubut","Río Negro","Tucumán"  ],
     ["Santa Fe de la Veracruz","Rosario","Vera"  ],
     ["Rosario","9 de Julio","San Cristóbal"  ],
     ["6","1","9"  ],

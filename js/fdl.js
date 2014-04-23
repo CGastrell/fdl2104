@@ -317,6 +317,7 @@
 						},
 						gameEnded: function(evt, data) {
 							//esto sucede antes de mostrar el cartel final de la trivia
+							_this.provinciasCompletadas++;
 							if(data.score > 1) {
 								$('.finalScoreLabel',data.instance.endSplash).html("¡Enhorabuena!<br />Superaste el desafío "
 									+ provincia.data('name') + "<br /><br />"
@@ -339,24 +340,29 @@
 						},
 						gameRestart: function(evt, data) {
 							var gameComplete = false;
-							_this.provinciasCompletadas++;
-							if(_this.provinciasCompletadas >= _this.provsCatalog.length) {
+							if(_this.provinciasCompletadas >= 23) {
 								// $('p.selecciona',_this.selectSplash).html("FELICITACIONES!!!");
 								gameComplete = true;
 								$('#grandTotal',_this.endSplash).html(_this.score);
-								TweenMax.set(_this.endSplash,{autoAlpha:1});
-								TweenMax.to(_this.endSplash,0.25,{autoAlpha:0,onComplete:function endIt(){
-									//OJO ACAAAAAAAAAAAAA falta esconder el roundSplash o algo asi
-									TweenMax.from($('#endSplash2',_this.endSplash),0.25,{y:-1000,ease:Back.easeOut});
+								TweenMax.set($('#endSplash2',_this.endSplash),{autoAlpha:0});
+								TweenMax.to([_this.triviaContainer,_this.selectSplash],0.5,{autoAlpha:0});
+								TweenMax.to(_this.endSplash,1,{autoAlpha:1,onComplete:function endIt(){
+									miniTrivia.trivia("destroy");
+									miniTrivia = null;
+									_this.triviaContainer.html("");
+									TweenMax.to($('#endSplash2',_this.endSplash),0.5,{autoAlpha:1});
+									TweenMax.from($('#endSplash2',_this.endSplash),0.5,{y:-1000,ease:Back.easeOut});
 									_this.endSplash.one('click',function(){
 										var tl2 = new TimelineMax({onComplete:function(){
 											_this.startGame();
 										}});
+										tl2.to(_this.selectSplash,0.25,{autoAlpha:0});
 										tl2.to(_this.endSplash,1,{autoAlpha:0});
 										tl2.staggerTo('.provincia',0.5,{autoAlpha:0,fill:'#f00',ease:RoughEase.ease},0.05);
 										tl2.to(_this.svg,1,{scale:1,x:0,y:0,ease:Back.easeInOut});
 									});
 								}});
+								return;
 							}
 							if(data.score < 2) {
 								$('p.selecciona',_this.selectSplash).html("Seleccioná una provincia del mapa para comenzar");
