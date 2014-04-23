@@ -169,7 +169,7 @@
 			tl.staggerTo([_this.mapContainer, _this.callToAction],1,{autoAlpha:1},0.5);
 			tl.staggerTo('.provincia',0.5,{autoAlpha:0.5,fill:'#fff',ease:RoughEase.ease},0.05);
 			tl.from($('.logo','#callToAction'),1.5,{autoAlpha:0, rotationX: -180,ease: Elastic.easeOut},"-=1");
-			tl.set('.provincia',{transformOrigin:"240px 973px",fill: "#fff"});
+			tl.set('.provincia',{fill: "#fff"});//transformOrigin:"240px 973px",
 
 			// $.each($('.provincia'), function(i,e){
 			// 	$(e).data('respondida',false);
