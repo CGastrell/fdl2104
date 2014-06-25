@@ -278,7 +278,7 @@
 									data.instance.respond('rrr',true,'Se acabó el tiempo!');
 							}});
 							tl.set(timeDonut,{transformOrigin:"center center"});
-							tl.add(_this._makeDonutTimer('#donut',5));
+							tl.add(_this._makeDonutTimer('#donut',7));
 							tl.add(TweenMax.to(timeDonut,0.2,{scale:1.3,yoyo:true,repeat:1,ease:Back.easeIn}),0);
 							tl.add(TweenMax.to(timeDonut,0.2,{scale:1.3,yoyo:true,repeat:1,ease:Back.easeIn}),1);
 							tl.add(TweenMax.to(timeDonut,0.2,{scale:1.3,yoyo:true,repeat:1,ease:Back.easeIn}),2);

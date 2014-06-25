@@ -10,23 +10,23 @@
     },
     {
       "id":1,
-      "question":"¿Cuál es el partido con mayor superficie del Gran Buenos Aires?",
+      "question":"¿Cuál es el partido de mayor superficie del Gran Buenos Aires?",
       "correctAnswer":"La Matanza",
-      "answerTip":"El partido con mayor superficie del Gran Buenos Aires es La Matanza. Cuenta con una superficie total de 325.71 Km². El distrito limita al noroeste con la Ciudad Autónoma de Buenos Aires, al sudoeste con Cañuelas y Marcos Paz, mientras que al sudeste con los partidos de Lomas de Zamora y Esteban Echeverría; y por último al noroeste con Marcos Paz, Merlo, Morón y Tres de Febrero. Coordenadas: 34°43′00″S 58°38′00″O\n",
+      "answerTip":"El partido con mayor superficie del Gran Buenos Aires es La Matanza. Cuenta con una superficie total de 325.71 Km². El distrito limita al noroeste con la Ciudad Autónoma de Buenos Aires, al sudoeste con Cañuelas y Marcos Paz, mientras que al sudeste con los partidos de Lomas de Zamora y Esteban Echeverría; y por último al noroeste con Marcos Paz, Merlo, Morón y Tres de Febrero. Coordenadas: 34°43′00″S 58°38′00″O",
       "provinciaId":6,
       "provinciaName":"Buenos Aires"
     },
     {
       "id":2,
       "question":"¿Cuál es la superficie de la provincia de Buenos Aires?",
-      "correctAnswer":"307.571 km² ",
+      "correctAnswer":"307.571 km²",
       "answerTip":"La superficie de la provincia de Buenos Aires es de 307.571 km² (aproximadamente la superficie de Polonia o Italia). Es la tercera entidad subnacional más extensa de Hispanoamérica detrás de Santa Cruz en Bolivia y Loreto en Perú.",
       "provinciaId":6,
       "provinciaName":"Buenos Aires"
     },
     {
       "id":3,
-      "question":"¿En cuantos partidos se encuentra dividida la provincia de Buenos Aires?",
+      "question":"¿Cuántos partidos conforman la provincia de Buenos Aires?",
       "correctAnswer":"135",
       "answerTip":"La provincia de Buenos Aires se encuentra dividida en 135 municipios, denominados constitucionalmente \"partidos\".",
       "provinciaId":6,
@@ -58,15 +58,15 @@
     },
     {
       "id":7,
-      "question":"¿En cuántos municipios se encuentra dividida la provincia de Catamarca?",
+      "question":"¿En cuántos departamentos se encuentra dividida la provincia de Catamarca?",
       "correctAnswer":"36",
-      "answerTip":"La provincia de Catamarca se encuentra dividida en 36 municipios que conforman 16 departamentos. ",
+      "answerTip":"La provincia de Catamarca se encuentra dividida en 36 municipios que conforman 16 departamentos.",
       "provinciaId":18,
       "provinciaName":"Catamarca"
     },
     {
       "id":8,
-      "question":"¿Cuál es la superficie total de la provincia de Catamarca?",
+      "question":"¿Cuál es la superficie de la provincia de Catamarca?",
       "correctAnswer":"102.602 km²",
       "answerTip":"La superficie total de la provincia de Catamarca es de 102.602 km², la colocan en el puesto Nº 11 de las provincias más extensas de la República Argentina.",
       "provinciaId":18,
@@ -74,7 +74,7 @@
     },
     {
       "id":9,
-      "question":"¿De que origen es la palabra \"Catamarca\" ?",
+      "question":"¿Cuál es el origen de la palabra \"Catamarca\"?",
       "correctAnswer":"Quichua",
       "answerTip":"La palabra Catamarca es de origen quichua y significa Castillo o Fortaleza en la Falda. \"Cata\" es falda o ladera y \"marca\" es castillo o fortaleza de la frontera.",
       "provinciaId":18,
@@ -82,7 +82,7 @@
     },
     {
       "id":10,
-      "question":"¿ Con cuál provincia limita Catamarca al Norte?",
+      "question":"¿Cuál provincia limita al norte de Catamarca?",
       "correctAnswer":"Salta",
       "answerTip":"Catamarca limita al norte con la provincia de Salta.",
       "provinciaId":18,
@@ -90,7 +90,7 @@
     },
     {
       "id":11,
-      "question":"¿ En que año fue fundada la ciudad de San Fernando del Valle de Catamarca, capital de la provincia?",
+      "question":"¿ En que año fue fundada la capital provincial San Fernando del Valle de Catamarca?",
       "correctAnswer":"1683",
       "answerTip":"La ciudad de San Fernando del Valle fue fundada el 5 de julio de 1683 por Fernando de Mendoza y Mate de Luna; luego de varias fundaciones en las que el pueblo había sido bautizado con diferentes nombres y trasladado a diferentes lugares del actual territorio de la provincia de Catamarca. Coordenadas: 28°28′07″S 65°46′45″O",
       "provinciaId":18,
@@ -114,7 +114,7 @@
     },
     {
       "id":14,
-      "question":"¿Con cuantas provincias limita la provincia del Chaco?",
+      "question":"¿Con cuántas provincias limita la provincia del Chaco?",
       "correctAnswer":"5",
       "answerTip":"La provincia de Chaco limita con 5 (cinco) provincias. Al oeste limita con las provincias de Salta y Santiago del Estero, al sur con Santa Fe. El río Paraná la separa de la provincia de Corrientes; al Este y norte limita con Formosa mediante el río Bermejo y su afluente, el río Teuco.",
       "provinciaId":19,
@@ -122,7 +122,7 @@
     },
     {
       "id":15,
-      "question":"¿Qué río separa Chaco de la provincia de Corrientes?",
+      "question":"¿Qué río sirve de límite natural entre la provincia del Chaco y la provincia de Corrientes?",
       "correctAnswer":"Río Paraná",
       "answerTip":"El río Paraná sirve de limite natural entre la provincia de Corrientes y Chaco.",
       "provinciaId":19,
@@ -138,15 +138,15 @@
     },
     {
       "id":17,
-      "question":"¿Cuál es la superficie total de la provincia del Chaco?",
+      "question":"¿Cuál es la superficie de la provincia del Chaco?",
       "correctAnswer":"99.633 km²",
-      "answerTip":" La superficie total de la provincia del Chaco es 99.633 km². Su superficie la coloca en el puesto Nº 12 de las provincias más extensas de la República Argentina.",
+      "answerTip":"La superficie total de la provincia del Chaco es 99.633 km². Su superficie la coloca en el puesto Nº 12 de las provincias más extensas de la República Argentina.",
       "provinciaId":19,
       "provinciaName":"Chaco"
     },
     {
       "id":18,
-      "question":"¿Cuál localidad de la provincia del Chubut es considerada “La Capital de la Fruta Fina”?",
+      "question":"¿Qué localidad de la provincia del Chubut es considerada “La Capital de la Fruta Fina”?",
       "correctAnswer":"El Hoyo",
       "answerTip":"El Hoyo es la localidad de la provincia del Chubut considerada como “la Capital de la Fruta Fina”. Declarada en el año 1986 todos los meses de enero se celebra la Fiesta Nacional de la Fruta Fina con el objetivo de homenajear la principal actividad económica. El grupo de “frutas finas” -denominación que se vincula al aspecto comercial y no al botánico- incluye a un conjunto de especies que se caracterizan por su reducido tamaño y pueden clasificarse en Berries, (Arándanos, Frambuesas rojas, Moras y frutillas) y Cherries (Cerezas y Guindas)  Coordenadas: 27°02′00″S 63°14′00″O",
       "provinciaId":2,
@@ -154,7 +154,7 @@
     },
     {
       "id":19,
-      "question":"¿En que año fue creado el Parque Nacional Los Alerces?",
+      "question":"¿En qué año fue creado el Parque Nacional Los Alerces?",
       "correctAnswer":"1937",
       "answerTip":"El Parque nacional Los Alerces fue creado en el año 1937 y posee una superficie de 259.570 hectáreas. El fundamento de su creación es la protección de los bosques de lahuán o alerce, uno de los árboles de mayor longevidad del planeta, que llegó a estar en peligro de extinción. Coordenadas  42°50′00″S 71°52′00″O",
       "provinciaId":2,
@@ -170,7 +170,7 @@
     },
     {
       "id":21,
-      "question":"¿En que año fue declarada la Península Valdés Patrimonio de la Humanidad?",
+      "question":"¿En qué año fue declarada la Península Valdés Patrimonio de la Humanidad?",
       "correctAnswer":"1999",
       "answerTip":"La Península Valdés fue  declarada Patrimonio de la Humanidad por la UNESCO en 1999. Presenta una porción de tierra de contorno casi triangular unida al continente por el istmo Carlos Ameghino. Su centro geográfico se ubica hacia las coordenadas:  Coordenadas  42°31′S 63°56′O",
       "provinciaId":2,
@@ -194,7 +194,7 @@
     },
     {
       "id":24,
-      "question":"¿Cuál es la cota (altura) del Cerro Uritorco?",
+      "question":"¿Cuál es la cota del Cerro Uritorco?",
       "correctAnswer":"1949 msnm",
       "answerTip":"El cerro Uritorco tiene una altura de 1949 msnm y esta situado en el norte del Valle de Punilla, próximo a Capilla del Monte. Coordenadas  30°50′39″S 64°28′34″O",
       "provinciaId":10,
@@ -202,7 +202,7 @@
     },
     {
       "id":25,
-      "question":"¿Con cuantas provincias limita la provincia de Córdoba?",
+      "question":"¿Con cuántas provincias limita la provincia de Córdoba?",
       "correctAnswer":"7",
       "answerTip":"La provincia de Córdoba limita con 7 (siete) provincias: Catamarca, Santiago del Estero, Santa Fe, Buenos Aires, La Pampa, San Luis y La Rioja.",
       "provinciaId":10,
@@ -210,7 +210,7 @@
     },
     {
       "id":26,
-      "question":"¿En cuantos departamentos se divide la provincia de Córdoba?",
+      "question":"¿En cuántos departamentos se divide la provincia de Córdoba?",
       "correctAnswer":"26",
       "answerTip":"La provincia se encuentra dividida en 26 departamentos, cada uno subdividido en pedanías. La Ley de Regionalización Provincial N.º 9206, reconoce en cada departamento a una Comunidad Regional integrada por los municipios y comunas en forma voluntaria.",
       "provinciaId":10,
@@ -218,7 +218,7 @@
     },
     {
       "id":27,
-      "question":"¿En cuál localidad se celebra la Fiesta Provincial del \"Salame Casero\" ?",
+      "question":"¿En que localidad se celebra la Fiesta Provincial del \"Salame Casero\" ?",
       "correctAnswer":"Colonia Caroya",
       "answerTip":"La Fiesta Provincial del Salame Casero se celebrá en la localidad de Colonia Caroya. Tiene lugar durante la primera quincena del mes de Octubre. Se llevó a cabo por primera vez en septiembre de 1979 con el fin de mantener vigente la tradición friulana y la indiscutida popularidad del salame de Colonia Caroya. Coordenadas: 31°02′0″S 64°5′36″O",
       "provinciaId":10,
@@ -234,7 +234,7 @@
     },
     {
       "id":29,
-      "question":"¿En que año se fundó la capital de Córdoba?",
+      "question":"¿En qué año se fundó la capital de la provincia de Córdoba?",
       "correctAnswer":"1573",
       "answerTip":"El 6 de julio de 1573 Jerónimo Luis de Cabrera fundó la ciudad de Córdoba de La Nueva Andalucía, a orillas del río Suquía. Coordenadas: 31°25′00″S 64°11′00″O",
       "provinciaId":10,
@@ -250,7 +250,7 @@
     },
     {
       "id":31,
-      "question":"¿Con cuantos países limita la provincia de Corrientes?",
+      "question":"¿Con cuántos países limita la provincia de Corrientes?",
       "correctAnswer":"3",
       "answerTip":"La provincia de Corrientes limita con 3 (tres) países: al norte con la República del Paraguay, al este con la República Federativa del Brasil y la República Oriental del Uruguay.",
       "provinciaId":15,
@@ -258,7 +258,7 @@
     },
     {
       "id":32,
-      "question":"¿Qué río separa a la provincia de Corrientes de los países de Brasil y Uruguay?",
+      "question":"¿Qué río separa a la provincia de Corrientes de Brasil y Uruguay?",
       "correctAnswer":"Uruguay",
       "answerTip":"El río Uruguay separa a la provincia de Brasil y Uruguay. Allí se forma una triple frontera entre las ciudades de Monte Caseros (Argentina), Bella Unión, (ciudad del departamento de Artigas, Uruguay) y Barra do Quarai (Río Grande del Sur, Brasil).",
       "provinciaId":15,
@@ -266,9 +266,9 @@
     },
     {
       "id":33,
-      "question":"¿Sobre cuál río esta ubicada la represa hidroeléctrica de Yaciretá-Apipé ?",
+      "question":"¿Sobre qué río esta ubicado el Complejo Hidroeléctrico Yaciretá-Apipé ?",
       "correctAnswer":"Paraná",
-      "answerTip":"La represa hidroeléctrica de Yacyretá-Apipé esta ubicada sobre el río Paraná. Es una central hidroeléctrica construida sobre los saltos de Yacyretá-Apipé.\nEl equipo de la central tiene una potencia instalada total de 3200 MW, y una Línea de cota de 83 metros sobre el nivel del mar, existiendo un proyecto de ampliación que permitiría incrementar esta capacidad casi al doble. ",
+      "answerTip":"La represa hidroeléctrica de Yacyretá-Apipé esta ubicada sobre el río Paraná. Es una central hidroeléctrica construida sobre los saltos de Yacyretá-Apipé.\nEl equipo de la central tiene una potencia instalada total de 3200 MW, y una Línea de cota de 83 metros sobre el nivel del mar, existiendo un proyecto de ampliación que permitiría incrementar esta capacidad casi al doble.",
       "provinciaId":15,
       "provinciaName":"Corrientes"
     },
@@ -282,7 +282,7 @@
     },
     {
       "id":35,
-      "question":"¿Qué río separa Corrientes del Paraguay y de las provincias del Chaco y Santa Fe?",
+      "question":"¿Qué río separa la provincia de Corrientes de la República del Paraguay?",
       "correctAnswer":"Paraná",
       "answerTip":"La provincia correntina limita al norte y al oeste con el Río Paraná, que la separa del Paraguay y las provincias de Chaco y Santa Fe.",
       "provinciaId":15,
@@ -290,7 +290,7 @@
     },
     {
       "id":36,
-      "question":"¿Con cuál país limita la provincia de Entre Ríos?",
+      "question":"¿Con qué país limita la provincia de Entre Ríos?",
       "correctAnswer":"Uruguay",
       "answerTip":"La provincia de Entre Ríos limita al este con la República Oriental del Uruguay.",
       "provinciaId":9,
@@ -306,7 +306,7 @@
     },
     {
       "id":38,
-      "question":"¿Con cuál provincia une a Entre Ríos el túnel subfluvial Raúl Uranga – Carlos Sylvestre Begnis, antes conocido como \"Hernandarias\"?",
+      "question":"¿Entre Ríos y qué otra provincia une el túnel subfluvial Raúl Uranga – Carlos Sylvestre Begnis, antes conocido como \"Hernandarias\"?",
       "correctAnswer":"Santa Fe",
       "answerTip":"El túnel subfluvial une a Entre Ríos con la provincia de Santa Fe. Fue construido entre 1961 y 1969 por debajo del lecho del río Paraná, comunicando las redes de tránsito rodado de ambas provincias.",
       "provinciaId":9,
@@ -314,15 +314,15 @@
     },
     {
       "id":39,
-      "question":"¿Cuál provincia limita al norte de Entre Ríos?",
+      "question":"¿Cuál es la provincia que limita al norte de Entre Ríos?",
       "correctAnswer":"Corrientes",
-      "answerTip":"Entre Ríos limita al norte con la provincia de Corrientes. Con un total de 78.781 kilómetros cuadrados, la provincia de Entre Ríos limita al sur con la Provincia de Buenos Aires y al oeste con la Provincia de Santa Fe.",
+      "answerTip":"Entre Ríos limita al norte con la provincia de Corrientes. Con un total de 78.781 kilómetros cuadrados, la provincia de Entre Ríos limita al sur con la Provincia de Buenos Aires, al oeste con la Provincia de Santa Fe y al este con la República Oriental del Uruguay.",
       "provinciaId":9,
       "provinciaName":"Entre Ríos"
     },
     {
       "id":40,
-      "question":"¿Con cuál ciudad uruguaya une el Puente Libertador General San Martín con la provincia de Entre Ríos? ",
+      "question":"¿Qué ciudad uruguaya une a la provincia de Entre Ríos el \"Puente Libertador General San Martín\"?",
       "correctAnswer":"Fray Bentos",
       "answerTip":"El Puente Libertador General San Martín une la ciudad de Gualeguaychú con la ciudad uruguaya de Fray Bentos. La obra tiene una longitud total de 5365 m (4220 m en jurisdicción argentina y 1145 m en jurisdicción uruguaya) incluyendo el puente y los accesos.",
       "provinciaId":9,
@@ -338,7 +338,7 @@
     },
     {
       "id":42,
-      "question":"¿Con cuál país limita la provincia de Formosa?",
+      "question":"¿Con qué país limita la provincia de Formosa?",
       "correctAnswer":"Paraguay",
       "answerTip":"La provincia de Formosa limita al este y al norte con la República del Paraguay.",
       "provinciaId":20,
@@ -346,7 +346,7 @@
     },
     {
       "id":43,
-      "question":"¿En cuantos departamentos se divide la provincia de Formosa?",
+      "question":"¿En cuántos departamentos se divide la provincia de Formosa?",
       "correctAnswer":"9",
       "answerTip":"La provincia se encuentra dividida en 9 departamentos: Bermejo, Formosa, Laishi, Matacos, Patiño, Pilagás, Pilcomayo, Pirané y Ramón Lista.",
       "provinciaId":20,
@@ -362,7 +362,7 @@
     },
     {
       "id":45,
-      "question":"¿Qué río constituye el limite sur natural de la provincia de Formosa?",
+      "question":"¿Qué río sirve de limite natural al sur de la provincia de Formosa?",
       "correctAnswer":"Bermejo",
       "answerTip":"El Río Bermejo constituye el límite Sur natural de la Provincia de Formosa (y desagua en el Río Paraguay), desplazándose de NNO a SSE. Hasta Fortín Lavalle, el río no recibe prácticamente aportes laterales significativos; hacia aguas abajo tiene aportes periódicos de algunos ríos y arroyos (Dobagán, Bellago) e incluso de esteros (principalmente el Bellaco).",
       "provinciaId":20,
@@ -370,7 +370,7 @@
     },
     {
       "id":46,
-      "question":"¿Qué río se considera como limite argentino-paraguayo en la provincia de Formosa?",
+      "question":"¿Qué río sirve de limite internacional con la república del Paraguay?",
       "correctAnswer":"Pilcomayo",
       "answerTip":"El Río Pilcomayo se considera como límite argentino-paraguayo. Tiene dirección Noroeste - Sureste (NW - SE).",
       "provinciaId":20,
@@ -378,7 +378,7 @@
     },
     {
       "id":47,
-      "question":"¿Cuál trópico atraviesa en su zona norte a la provincia de Formosa?",
+      "question":"¿Qué trópico atraviesa la provincia de Formosa?",
       "correctAnswer":"Trópico de Capricornio",
       "answerTip":"La provincia de Formosa es atravesada, en su zona norte, por el trópico de Capricornio que la ubica en la región tropical del país.",
       "provinciaId":20,
@@ -386,7 +386,7 @@
     },
     {
       "id":48,
-      "question":"¿En que localidad de encuentra el Cerro de los Siete Colores?",
+      "question":"¿En qué localidad se encuentra el Cerro de los Siete Colores?",
       "correctAnswer":"Purmamarca",
       "answerTip":"El Cerro de los Siete Colores se encuentra en la localidad de Purmamarca y ambos forman una de las postales más reconocidas del noroeste argentino. Coordenadas  23°44′38″S 65°30′04″O",
       "provinciaId":22,
@@ -394,7 +394,7 @@
     },
     {
       "id":49,
-      "question":"¿En que año la Quebrada de Humahuaca fue declarada Patrimonio de la Humanidad por la UNESCO?",
+      "question":"¿En qué año la \"Quebrada de Humahuaca\" fue declarada Patrimonio de la Humanidad por la UNESCO?",
       "correctAnswer":"2003",
       "answerTip":"La Quebrada de Humahuaca fue declarada Patrimonio Cultural y Natural de la Humanidad en julio de 2003 por la Unesco, por ser una combinación de maravillosos paisajes, los numerosos caseríos, pueblos y ciudades que conservan muchos vestigios precolombinos y coloniales. Coordenadas  23°11′59.5″S 65°20′55.9″O",
       "provinciaId":22,
@@ -402,7 +402,7 @@
     },
     {
       "id":50,
-      "question":"¿Con cuál país une a San Salvador de Jujuy el Paso de Jama?",
+      "question":"¿Qué país une a la provincia de Jujuy el Paso de Jama?",
       "correctAnswer":"Chile",
       "answerTip":"Este paso fronterizo fue inaugurado oficialmente el 6 de diciembre de 1991 y está totalmente pavimentado desde fines del año 2005. Une la II Región de Antofagasta con la Provincia de Jujuy a través de la ruta 27-CH de Chile y la Ruta Nacional 52 de Argentina. Coordenadas  23°14′15″S 67°04′35″O",
       "provinciaId":22,
@@ -410,7 +410,7 @@
     },
     {
       "id":51,
-      "question":"¿En cuál departamento se encuentra el Parque Nacional Calilegua?",
+      "question":"¿Cómo se llama el departamento de la provincia de Jujuy donde se encuentra el Parque Nacional Calilegua?",
       "correctAnswer":"Ledesma",
       "answerTip":"El parque nacional Calilegua se encuentra en el departamento de Ledesma. Su creación en 1979 tenía como objetivo la protección de las yungas, y el resguardo de las nacientes de arroyos de la sierra para preservar una importante cuenca hídrica, la cual abastece de agua a las zonas agrícolas y poblaciones cercanas. Coordenadas  23°55′S 64°50′O",
       "provinciaId":22,
@@ -418,7 +418,7 @@
     },
     {
       "id":52,
-      "question":"¿En cuál departamento se encuentra La Quiaca?",
+      "question":"¿Cuál es el nombre del departamento de la provincia de Jujuy donde se encuentrala ciudad de La Quiaca?",
       "correctAnswer":"Yavi",
       "answerTip":"La Quiaca se ubicada en el departamento de Yavi al norte de la provincia. Es cabecera del mismo y sirve de paso fronterizo con Bolivia, a través de la ciudad de Villazón con la cual conforma actualmente una conurbación de más de 50 000 habitantes. Coordenadas: 22°06′20″S 65°36′00″O",
       "provinciaId":22,
@@ -442,7 +442,7 @@
     },
     {
       "id":55,
-      "question":"¿Qué río separa La Pampa de la provincia de Río Negro?",
+      "question":"¿Qué río sirve de límite natural al sur de la provincia de La Pampa?",
       "correctAnswer":"Río Colorado",
       "answerTip":"El río Colorado separa La Pampa de la provincia de Río Negro. Es un río del centro-sur de Argentina que nace en la cordillera de los Andes y desemboca en el mar Argentino. Tambiém sirve de limite a las provicnias de Mendoza y Neuquén.",
       "provinciaId":5,
@@ -450,25 +450,25 @@
     },
     {
       "id":56,
-      "question":"¿Cuantas provincias limitan con La Pampa?",
+      "question":"¿Cuántas son las provincias que limitan con La Pampa?",
       "correctAnswer":"6",
-      "answerTip":" La Pampa limita con 6(seis) provincias: Río Negro, Buenos Aires, San Luis, Córdoba, Mendoza y Neuquén.",
+      "answerTip":"La Pampa limita con 6(seis) provincias: Río Negro, Buenos Aires, San Luis, Córdoba, Mendoza y Neuquén.",
       "provinciaId":5,
       "provinciaName":"La Pampa"
     },
     {
       "id":57,
-      "question":"¿Con que Parque Nacional cuenta la provincia de La Pampa?",
-      "correctAnswer":"P.N. Lihuél Calel ",
+      "question":"¿Comó se llama el Parque Nacional que se encuentra en la provincia de la Pampa?",
+      "correctAnswer":"P.N. Lihuél Calel",
       "answerTip":"La provincia de La Pampa cuenta con el parque nacional Lihué Calel. Tiene 9.901 hectareas en el centro sur de la provincia de La Pampa, departamento Lihuel Calel. Fue creado en 1977. El decreto N.° 2149/90 del 10 de octubre de 1990 designó a un sector del parque nacional como reserva natural estricta. Coordenadas  38°01′S 65°32′O",
       "provinciaId":5,
       "provinciaName":"La Pampa"
     },
     {
       "id":58,
-      "question":"¿Cuál provincia limita al este La Pampa?",
+      "question":"¿Con qué provincia limita La Pampa hacia el este?",
       "correctAnswer":"Buenos Aires",
-      "answerTip":"La Pampa limita este con la provincia de Buenos Aires.",
+      "answerTip":"La Pampa limita al este con la provincia de Buenos Aires.",
       "provinciaId":5,
       "provinciaName":"La Pampa"
     },
@@ -482,7 +482,7 @@
     },
     {
       "id":60,
-      "question":"¿Con qué parque nacional cuenta la provincia de La Rioja?",
+      "question":"¿Cómo se llama el Parque Nacional que se encuentra en la provincia de La Rioja?",
       "correctAnswer":"P.N. Talampaya",
       "answerTip":"La provincia de La Rioja cuenta con el parque nacional Talampaya. Es una reserva natural y uno de los siete \"Patrimonios de la Humanidad\" declarados por la Unesco en Argentina. Se encuentra ubicado en el centro-oeste de la provincia de La Rioja. Fue creado en 1975 como parque provincial con el objetivo de proteger importantes yacimientos arqueológicos y paleontológicos de la zona. Coordenadas  30°0′S 68°0′O",
       "provinciaId":13,
@@ -490,7 +490,7 @@
     },
     {
       "id":61,
-      "question":"¿Cómo se denomina el dique más grande conque cuenta la provincia de La Rioja?",
+      "question":"¿Cómo se llama el dique más grande de la provincia de La Rioja?",
       "correctAnswer":"Dique de Anzulón",
       "answerTip":"El dique de Anzuón es el más grande de la provincia de La Rioja. Se encuentra ubicado al sur de la provincia en una zona denominada Sierra de los Llanos a 34 Km de Olta (departamento General Belgrano) y a 15 Km de Catuna (Villa de Santa Rita).",
       "provinciaId":13,
@@ -500,7 +500,7 @@
       "id":62,
       "question":"¿En la ladera Este de qué sierra se emplaza la capital de la provincia de La Rioja?",
       "correctAnswer":"Sierra de Velasco",
-      "answerTip":"La capital de la provinicia de La Rioja se emplaza en la ladera este de la sierra de Velasco. Cerca de sus laderas se establecen las dos ciudades mas importares de la provincia, la capital riojana del mismo nombre y Chilecito. La mayor altura de la sierra del Velasco es de 4.920 msnm.",
+      "answerTip":"La capital de la provincia de La Rioja se emplaza en la ladera este de la sierra de Velasco. Cerca de sus laderas se establecen las dos ciudades mas importares de la provincia, la capital riojana del mismo nombre y Chilecito. La mayor altura de la sierra del Velasco es de 4.920 msnm.",
       "provinciaId":13,
       "provinciaName":"La Rioja"
     },
@@ -508,7 +508,7 @@
       "id":63,
       "question":"¿Cuál es el principal cultivo de la provincia de La Rioja?",
       "correctAnswer":"La vid",
-      "answerTip":"El principal cultivo de la provincia de La Rioja es la vid. Se cultiva en Chilecito, Famatina, Vinchina, Sanagasta y Castro Barros. La superficie cultivada es de 8.300 hectáreas y la producción anual asciende a aproximadamente 118.308 toneladas. ",
+      "answerTip":"El principal cultivo de la provincia de La Rioja es la vid. Se cultiva en Chilecito, Famatina, Vinchina, Sanagasta y Castro Barros. La superficie cultivada es de 8.300 hectáreas y la producción anual asciende a aproximadamente 118.308 toneladas.",
       "provinciaId":13,
       "provinciaName":"La Rioja"
     },
@@ -522,7 +522,7 @@
     },
     {
       "id":65,
-      "question":"¿Con cuantas provincias limita la provincia de La Rioja?",
+      "question":"¿Cuántas son las provincias que limitan con La Rioja?",
       "correctAnswer":"4",
       "answerTip":"La Rioja limita con 4 (cuatro) provincias: al oeste con la provincia de San Juan, al sur con San Luis, al este con Córdoba y al norte con Catamarca.",
       "provinciaId":13,
@@ -538,7 +538,7 @@
     },
     {
       "id":67,
-      "question":"¿Con cuantas provincias limita la provincia de Mendoza?",
+      "question":"¿Cuántas son las provincias que limitan con la provincia de Mendoza?",
       "correctAnswer":"4",
       "answerTip":"Mendoza limita con 4 (cuatro) provincias: al norte con San Juan, al este con San Luis, al sur con la La Pampa y Neuquén.",
       "provinciaId":7,
@@ -547,7 +547,7 @@
     {
       "id":68,
       "question":"¿Qué Fiesta Nacional se celebra en la provincia de Mendoza, la cual está relacionada con la principal actividad agrícola de la provincia?",
-      "correctAnswer":"De la Vendimia.",
+      "correctAnswer":"De la Vendimia",
       "answerTip":"La Fiesta Nacional de la Vendimia es una festividad tradicional y popular originaria de la provincia de Mendoza.Refleja la celebración de la uva transformada en vino a través del esfuerzo que los viñateros llevan a cabo en las viñas. Se celebra durante los primeros días del mes de marzo.",
       "provinciaId":7,
       "provinciaName":"Mendoza"
@@ -570,15 +570,15 @@
     },
     {
       "id":71,
-      "question":"¿Cuál es la cota (altura) del cerro Aconcagua, ubicado en la provincia de Mendoza?",
+      "question":"¿Cuál es la cota del cerro Aconcagua en la provincia de Mendoza?",
       "correctAnswer":"6960,8 metros",
-      "answerTip":" La cota oficial del cerro Aconcagua es de 6960,8 metros. En el año 2012 el Instituto Geográfico Nacional determinó su altura. Coordenadas  32°39′20″S 70°00′57″O",
+      "answerTip":"La cota oficial del cerro Aconcagua es de 6960,8 metros. En el año 2012 el Instituto Geográfico Nacional determinó su altura. Coordenadas  32°39′20″S 70°00′57″O",
       "provinciaId":7,
       "provinciaName":"Mendoza"
     },
     {
       "id":72,
-      "question":"¿Por cuántos ríos  está rodeada la  provincia de Misiones?",
+      "question":"¿Cuántos ríos  rodean la provincia de Misiones?",
       "correctAnswer":"5",
       "answerTip":"La provincia de Misiones se encuentra rodeada por 5 (cinco) ríos: Paraná, Uruguay, Iguazú, San Antonio y Pepirí Guazú",
       "provinciaId":17,
@@ -604,13 +604,13 @@
       "id":75,
       "question":"¿Con cuantos países limita la provincia de Misiones?",
       "correctAnswer":"2",
-      "answerTip":"La provinica de Misiones limita con 2 (dos) países: al oeste con Paraguay, del que está separada por el río Paraná, al este, norte y sur con Brasil, por medio de los ríos Iguazú, San Antonio y Pepirí Guazú.",
+      "answerTip":"La provincia de Misiones limita con 2 (dos) países: al oeste con Paraguay, del que está separada por el río Paraná, al este, norte y sur con Brasil, por medio de los ríos Iguazú, San Antonio y Pepirí Guazú.",
       "provinciaId":17,
       "provinciaName":"Misiones"
     },
     {
       "id":76,
-      "question":"¿Qué río alimenta el flujo de las Cataratas de Iguazú?",
+      "question":"¿Qué río alimenta a las Cataratas del Iguazú?",
       "correctAnswer":"Río Iguazú",
       "answerTip":"El río Iguazú alimenta el flujo de las cataratas. Es un río del nordeste de la Argentina y del sudeste del Brasil, en el centro-este de América del Sur. Pertenece a la cuenca del Plata. Nace en el cordón montañoso brasileño denominado Serra do Mar, en el estado de Paraná, y luego de un recorrido de aproximadamente 1300 kilómetros desemboca en el río Alto Paraná.",
       "provinciaId":17,
@@ -618,7 +618,7 @@
     },
     {
       "id":77,
-      "question":"¿En las cercanías de cuál río se encuentra la ciudad de Posadas?",
+      "question":"¿Sobre qué río se encuentra la ciudad de Posadas?",
       "correctAnswer":"Paraná",
       "answerTip":"Posadas se encuentra en las cercanías del río Paraná. La ciudad se ubica sobre la margen izquierda del río Paraná, al sudoeste de la provincia y en el noroeste del departamento Capital. Coordenadas: 27°22′00″S 55°53′49″O",
       "provinciaId":17,
@@ -626,17 +626,17 @@
     },
     {
       "id":78,
-      "question":"¿Cuál es la cota (altura) del Volcán Lanín?",
-      "correctAnswer":"3776 msnm",
-      "answerTip":"La cota (altura) máxima del Volcán Lanín es de 3776 msnm. Se encuentra ubicado en las coordenadas  39°38′22″S 71°30′64″O.",
+      "question":"¿Cuál es la cota del Volcán Lanín?",
+      "correctAnswer":"3728 msnm",
+      "answerTip":"La cota del Volcán Lanín es de 3728 msnm. Se encuentra ubicado en las coordenadas  39°38′22″S 71°30′64″O.",
       "provinciaId":3,
       "provinciaName":"Neuquén"
     },
     {
       "id":79,
-      "question":"¿Con cuál país limita la provincia de Neuquén?",
+      "question":"¿Con qué país limita al oeste la provincia del Neuquén?",
       "correctAnswer":"Chile",
-      "answerTip":"La provincia de Neuquén limita al oeste con Chile de la que la separa la Cordillera de los Andes.",
+      "answerTip":"La provincia del Neuquén limita al oeste con Chile de la que la separa la Cordillera de los Andes.",
       "provinciaId":3,
       "provinciaName":"Neuquén"
     },
@@ -650,15 +650,15 @@
     },
     {
       "id":81,
-      "question":"¿De cuál lengua proviene el nombre Neuquén?",
-      "correctAnswer":"mapuche",
+      "question":"¿De qué lengua proviene el nombre \"Neuquén\"?",
+      "correctAnswer":"Mapuche",
       "answerTip":"El nombre \"Neuquén\" proviene del mapuche que significa \"agua que tiene fuerza\". Coordenadas: 38°57′06″S 68°04′28″O",
       "provinciaId":3,
       "provinciaName":"Neuquén"
     },
     {
       "id":82,
-      "question":"¿Con cuál provincia comparte Neuquén el Lago Nahuel Huapi?",
+      "question":"¿Con qué provincia comparte Neuquén el Lago Nahuel Huapi?",
       "correctAnswer":"Río Negro",
       "answerTip":"El Lago Nahuel Huapi es compartido con la provincia de Río Negro. Posee una superficie de 557 Km² y se sitúa a una altitud de unos 700 msnm. Alcanza una profundidad máxima de 464 metros. Coordenadas  41°05′00″S 71°20′08″O",
       "provinciaId":3,
@@ -666,24 +666,24 @@
     },
     {
       "id":83,
-      "question":"¿Dónde se encuentra la altura máxima de la provincia de Neuquén?",
+      "question":"¿Dónde se encuentra la altura máxima de la provincia del Neuquén?",
       "correctAnswer":"Volcán Domuyo",
-      "answerTip":"La altura máxima de la provincia es el Volcán Domuyo. Tiene una altura de 4707 msnm. Su nombre es de origen mapuche y significa que \"tiembla y rezonga\", debido probablemente a su actividad geotermal. Se lo conoce como «el techo de la Patagonia». Coordenadas 36°37′40″S 70°25′21″O",
+      "answerTip":"La altura máxima de la provincia es el Volcán Domuyo. Tiene una altura de 4702 msnm. Su nombre es de origen mapuche y significa que \"tiembla y rezonga\", debido probablemente a su actividad geotermal. Se lo conoce como «el techo de la Patagonia». Coordenadas 36°37′40″S 70°25′21″O",
       "provinciaId":3,
       "provinciaName":"Neuquén"
     },
     {
       "id":84,
-      "question":"¿Cómo se denomina la capital de la provincia de Río Negro?",
+      "question":"¿Cómo se llama la capital de la provincia de Río Negro?",
       "correctAnswer":"Viedma",
-      "answerTip":"La capital de la provincia de Río negro se la denomina Viedma. Es la ciudad capital  y cabecera del departamento Adolfo Alsina. Se sitúa al este de la provincia, en la margen derecha del tramo final del río Negro. Coordenadas: 40°48′S 63°00′O",
+      "answerTip":"La capital de la provincia de Río Negro se la denomina Viedma. Es la ciudad capital  y cabecera del departamento Adolfo Alsina. Se sitúa al este de la provincia, en la margen derecha del tramo final del río Negro. Coordenadas: 40°48′S 63°00′O",
       "provinciaId":4,
       "provinciaName":"Río Negro"
     },
     {
       "id":85,
       "question":"¿En qué ciudad se celebra la Fiesta Nacional de la Manzana?",
-      "correctAnswer":"General Roca ",
+      "correctAnswer":"General Roca",
       "answerTip":"La Fiesta Nacional de la Manzana se celebra ebn la ciudad de General Roca. Se realiza cada año en el mes de febrero en homenaje al fruto del manzano y a los fruticultores de la zona. Tiene una duración de cinco días. Se llevan a cabo espectáculos culturales, musicales, artísticos y concursos. Coordenadas: 39°02′00″S 67°35′00″O",
       "provinciaId":4,
       "provinciaName":"Río Negro"
@@ -699,30 +699,30 @@
     {
       "id":87,
       "question":"¿Qué accidente costero se considera el más importante de la provincia de Río Negro?",
-      "correctAnswer":"Golfo San Matías ",
+      "correctAnswer":"Golfo San Matías",
       "answerTip":"El accidente costero más importante de la provincia es el Golfo San Matías. Tiene unos 148 km de fondo con una anchura en su boca de unos 118 km y posee aguas muy profundas sin peligros para la navegación.",
       "provinciaId":4,
       "provinciaName":"Río Negro"
     },
     {
       "id":88,
-      "question":"¿Qué río es considerado como la frontera norte de la provincia de Río Negro?",
-      "correctAnswer":"Río Negro ",
-      "answerTip":"El río Negro es considerado la frontera norte de la provincia. Es el río más importante de la provincia de Río Negro y también de la Patagonia en cuanto a su caudal. Su nombre proviene de la traducción literal del mapundungun Curu Leuvu. Antiguamente era conocido también como río de los Sauces debido a la gran cantidad de sauces llorones que hay en sus orillas.",
+      "question":"¿Qué río sirve de límite natural al norte de la provincia de Río Negro?",
+      "correctAnswer":"Río Colorado",
+      "answerTip":"El río Colorado es considerado la frontera norte de la provincia. Es uno de los ríos más importantes de la provincia de Río Negro.",
       "provinciaId":4,
       "provinciaName":"Río Negro"
     },
     {
       "id":89,
-      "question":"¿Qué importante cerro se encuentra ubicado en el límite de la provincia de Río Negro con Chile?",
-      "correctAnswer":"Tronador ",
-      "answerTip":"El cerro \"El Tronador\" se encuentra ubicado en el límite con Chile. Tiene una altura de 3491 msnm. Las coordenadas de su cumbre mayor son: 41° 9'38.67\"S, 71°53'6.52\"O. El nombre del cerro se debe al ruido similar al de truenos producido por los frecuentes desprendimientos y caídas de seracs en los glaciares del mismo.",
+      "question":"¿Qué importante monte se encuentra en el límite internacional Argentina - Chile?",
+      "correctAnswer":"Monte Tronador",
+      "answerTip":"El \"Monte Tronador\" se encuentra ubicado en el límite con Chile. Tiene una altura de 3478 msnm. Las coordenadas de su cumbre mayor son: 41° 9'38.67\"S, 71°53'6.52\"O. El nombre del cerro se debe al ruido similar al de truenos producido por los frecuentes desprendimientos y caídas de seracs en los glaciares del mismo.",
       "provinciaId":4,
       "provinciaName":"Río Negro"
     },
     {
       "id":90,
-      "question":"¿Cuál es la localidad ubicada a mayor altura sobre el nivel en la provincia de Salta?",
+      "question":"¿Cómo se llama la localidad ubicada a mayor altura sobre el nivel en la provincia de Salta?",
       "correctAnswer":"Olacapato",
       "answerTip":"la localidad de Olacapato es la que se encuentra ubicada a mayor altura sobre nivel del mar en la provincia de Salta. Es una pequeña localidad dentro del Departamento Los Andes emplazada a  4.090 msnm ( 24°6′50″S 66°43′7″O ).",
       "provinciaId":21,
@@ -730,7 +730,7 @@
     },
     {
       "id":91,
-      "question":"¿Con cuantos países limita la provincia de Salta?",
+      "question":"¿Con cuántos países limita la provincia de Salta?",
       "correctAnswer":"3",
       "answerTip":"Salta limita con 3 (tres) países: al norte con Bolivia, al este con Paraguay y al oeste con Chile.",
       "provinciaId":21,
@@ -746,7 +746,7 @@
     },
     {
       "id":93,
-      "question":"¿Cómo se llama el cerro emplazado al este de la ciudad de Salta?",
+      "question":"¿Cómo se llama el cerro sobre el cual se emplaza la ciudad de Salta?",
       "correctAnswer":"Cerro San Bernardo",
       "answerTip":"El cerro emplazado al este de la ciudad de Salta se llama \"San Bernardo\". A tan sólo 1 km al este de la plaza central (Plaza 9 de Julio) , el cerro San Bernardo, junto con el cerro 20 de Febrero y otras elevaciones menores más al norte, forman parte de la cordillera Oriental que son reserva natural de carácter municipal y provincial. Su cima se eleva a una altitud de 1471,92 msnm.",
       "provinciaId":21,
@@ -754,7 +754,7 @@
     },
     {
       "id":94,
-      "question":"¿Sobre cuál río se encuentra ubicado el Embalse El Tunal?",
+      "question":"¿Sobre qué río se encuentra ubicado el Embalse El Tunal?",
       "correctAnswer":"Río Juramento",
       "answerTip":"El Embalse El Tunal se encuentran ubicado sobre el río Juramento en el Departamento Metán. El embalse tiene como función la compensación estacional de las aguas que discurren por el cauce del Río Juramento. Con una central hidroeléctrica integrada al Sistema Interconectado Nacional mediante una línea de alta tensión y dos estaciones transformadoras, El Tunal permite poner bajo riego 62 000 has en la provincia de Salta y 48 300 has en la provincia de Santiago del Estero.",
       "provinciaId":21,
@@ -770,7 +770,7 @@
     },
     {
       "id":96,
-      "question":"¿Con cuál país limita la provincia de San Juan?",
+      "question":"¿Con qué país limita al oeste la provincia de San Juan?",
       "correctAnswer":"Chile",
       "answerTip":"La provincia de San Juan limita al oeste con la República de Chile, cuyo límite está determinado por la divisoria de agua de la cordillera de los Andes.",
       "provinciaId":11,
@@ -778,7 +778,7 @@
     },
     {
       "id":97,
-      "question":"¿En cuál departamento se encuentra ubicado el parque provincial Valle de la Luna?",
+      "question":"¿En qué departamento se encuentra ubicado el parque provincial  de Ischigualasto, comúnmente denominado \"Valle de la Luna\"?",
       "correctAnswer":"Valle Fértil",
       "answerTip":"El Parque provincial  de Ischigualasto o Valle de la Luna, se encuentra en el Departamento Valle Fértil. Es un área protegida de 275.369 hectáreas, célebre a nivel científico, ya que resguarda una importante reserva paleontológica. Coordenadas: 30°40′00″S 67°26′00″O",
       "provinciaId":11,
@@ -786,7 +786,7 @@
     },
     {
       "id":98,
-      "question":"¿En cuál departamento se encuentra ubicado el cerro Mercedario?",
+      "question":"¿En qué departamento se encuentra ubicado el cerro Mercedario?",
       "correctAnswer":"Calingasta",
       "answerTip":"El cerro Mercedario se encuentra en el Departamento de Calingasta. Es un accidente geográfico perteneciente a la Cordillera de los Andes ubicado en el extremo suroeste de la provincia de San Juan. Coordenadas  31°58′00″S 70°10′00″O",
       "provinciaId":11,
@@ -794,7 +794,7 @@
     },
     {
       "id":99,
-      "question":"¿Qué provincia limita al sur de San Juan?",
+      "question":"¿Con qué provincia limita al sur la provincia de San Juan?",
       "correctAnswer":"Mendoza",
       "answerTip":"La provincia de Mendoza limita al sur de San juan. Al norte y este con la Provincia de La Rioja, al sureste con la de San Luis y al oeste con la República de Chile, cuyo límite está determinado por la divisoria de agua de la cordillera de los Andes.",
       "provinciaId":11,
@@ -810,7 +810,7 @@
     },
     {
       "id":101,
-      "question":"¿Cuál es la variedad más importante en la producción vitivinícola de San Juan? ",
+      "question":"¿Cuál es la variedad más importante en la producción vitivinícola de San Juan?",
       "correctAnswer":"Syrah",
       "answerTip":"La variedad más importante en la producción vitivinícola de San Juan es el Syrah. La agricultura en San Juan está representada por el cultivo de la vid, siendo la segunda productora de Vino argentino.",
       "provinciaId":11,
@@ -818,15 +818,15 @@
     },
     {
       "id":102,
-      "question":"¿En cuántos departamentos está dividida la provincia de San Luis? ",
+      "question":"¿En cuántos departamentos está dividida la provincia de San Luis?",
       "correctAnswer":"9",
-      "answerTip":"San Luis se divide en 9 departamentos: Ayacucho (San Francisco del Monte de Oro), Belgrano (Villa General Roca), Chacabuco (Concarán), Coronel Pringles (La Toma), General Pedernera (Villa Mercedes),Gobernador Dupuy (Buena Esperanza),  Junín (Santa Rosa de Conlara), Juan Martín de Pueyrredón (San Luis) y Libertador General San Martín (San Martín).\n",
+      "answerTip":"San Luis se divide en 9 departamentos: Ayacucho (San Francisco del Monte de Oro), Belgrano (Villa General Roca), Chacabuco (Concarán), Coronel Pringles (La Toma), General Pedernera (Villa Mercedes),Gobernador Dupuy (Buena Esperanza),  Junín (Santa Rosa de Conlara), Juan Martín de Pueyrredón (San Luis) y Libertador General San Martín (San Martín).",
       "provinciaId":8,
       "provinciaName":"San Luis"
     },
     {
       "id":103,
-      "question":"¿Cuál río es el límite occidental de la provincia de San Luis? ",
+      "question":"¿Qué río es el límite oeste en la provincia de San Luis?",
       "correctAnswer":"Desaguadero",
       "answerTip":"El río Desaguadero es el límite occidental de la provincia de San Luis. Posee una longitud de unos 1498 km, constituyendo el tramo medio de su curso el límite entre las provincias de San Luis y Mendoza. Recibe varios nombres a lo largo de su curso, siendo su tramo más importante el que recibe la denominación «Desaguadero».",
       "provinciaId":8,
@@ -834,7 +834,7 @@
     },
     {
       "id":104,
-      "question":"¿Cuál provincia limita al norte de San Luis?",
+      "question":"¿Con qué provincia limita al norte la provincia de San Luis?",
       "correctAnswer":"La Rioja",
       "answerTip":"La Rioja es la provincia que limita al norte de San Luis.",
       "provinciaId":8,
@@ -842,7 +842,7 @@
     },
     {
       "id":105,
-      "question":"¿Cuántas provincias limitan con San Luis?",
+      "question":"¿Cuántas provincias limitan con la provincia de San Luis?",
       "correctAnswer":"5",
       "answerTip":"San Luis limita con 5 (cinco) provincias: al norte con La Rioja, al este con Córdoba, al sur con La Pampa, al oeste con Mendoza y al noroeste con San Juan.",
       "provinciaId":8,
@@ -851,14 +851,14 @@
     {
       "id":106,
       "question":"¿Qué localidad turística es reconocida internacionalmente por tener un microclima dentro de la provincia de San Luis?",
-      "correctAnswer":"Merlo",
+      "correctAnswer":"Ciudad Villa de Merlo",
       "answerTip":"La localidad de Merlo es conocida por tener un microclima en la provincia de San Luis. Se encuentra en el Departamento Junín. Coordenadas: 32°20′32″S 65°00′52″O",
       "provinciaId":8,
       "provinciaName":"San Luis"
     },
     {
       "id":107,
-      "question":"¿Cuál de estas localidades no pertenece a la provincia de San Luis? ",
+      "question":"¿Cuál de estas localidades no pertenece a la provincia de San Luis?",
       "correctAnswer":"Villa Giardino",
       "answerTip":"La localidad que no pertenece a la provincia de San Luis es Villa Giardino. Es una localidad situada en el departamento Punilla en la provincia de Córdoba. Se encuentra situada sobre la RN 38 y a 86 km de la ciudad de Córdoba.",
       "provinciaId":8,
@@ -874,7 +874,7 @@
     },
     {
       "id":109,
-      "question":"¿Sobre cuál río se encuentra La Cueva de las Manos declarada patrimonio de la Humanidad por la UNESCO en 1999?",
+      "question":"¿Sobre qué río se encuentra la \"Cueva de las Manos\" declarada patrimonio de la Humanidad por la UNESCO en 1999?",
       "correctAnswer":"Río Pinturas",
       "answerTip":"La cueva de las Manos se encuentra ubicada sobre el río Pinturas. Es un sitio arqueológico y de pinturas rupestres que se encuentra en el profundo cañadón del río Pinturas, en el Departamento Lago Buenos Aires al oeste de la Provincia de Santa Cruz. Su interés radica en la belleza de las pinturas rupestres, así como en su gran antigüedad: hasta el momento, las inscripciones más antiguas están fechadas 7350 a. C.",
       "provinciaId":1,
@@ -882,7 +882,7 @@
     },
     {
       "id":110,
-      "question":"¿Con cuál país limita la provincia de Santa Cruz?",
+      "question":"¿Con qué país limita la provincia de Santa Cruz?",
       "correctAnswer":"Chile",
       "answerTip":"Santa Cruz limita al sur y al oeste con la República de Chile. Con sus 243.943 km² de extensión, es una de las provincias más extensas del país.",
       "provinciaId":1,
@@ -906,7 +906,7 @@
     },
     {
       "id":113,
-      "question":"¿Cuál provincia limita al norte de Santa Cruz?",
+      "question":"¿Qué provincia limita al norte de Santa Cruz?",
       "correctAnswer":"Chubut",
       "answerTip":"La provincia del Chubut limita al norte de Santa Cruz. Al este con el océano Atlántico, al sur y al oeste con la República de Chile.",
       "provinciaId":1,
@@ -915,8 +915,8 @@
     {
       "id":114,
       "question":"¿Cuál es la capital de la provincia de Santa Fe?",
-      "correctAnswer":"Santa Fe de la Veracruz",
-      "answerTip":"Santa Fe de la Vera Cruz es la capital de Santa Fe y la novena ciudad más poblada de la Argentina. Está situada en la región centro-este del país, a orillas de la laguna Setúbal, del río Santa Fe y del río Salado. Coordenadas: 31°38′00″S 60°42′00″O",
+      "correctAnswer":"Santa Fe",
+      "answerTip":"Santa Fe es la capital de Santa Fe y la novena ciudad más poblada de la Argentina. Está situada en la región centro-este del país, a orillas de la laguna Setúbal, del río Santa Fe y del río Salado. Coordenadas: 31°38′00″S 60°42′00″O",
       "provinciaId":12,
       "provinciaName":"Santa Fe"
     },
@@ -930,7 +930,7 @@
     },
     {
       "id":116,
-      "question":"¿Con cuántas provincias  limita la provincia de Santa Fé?",
+      "question":"¿Con cuántas provincias limita la provincia de Santa Fé?",
       "correctAnswer":"6",
       "answerTip":"Santa Fe limita con 6 (seis) provincias: al norte con la Provincia del Chaco, al este con las de Corrientes y Entre Ríos, al sur con la Provincia de Buenos Aires y al oeste con las de Santiago del Estero y Córdoba.",
       "provinciaId":12,
@@ -938,7 +938,7 @@
     },
     {
       "id":117,
-      "question":"¿Qué río constituye un límite provincial entre Santa Fe y Entre Ríos?",
+      "question":"¿Qué río constituye un límite interprovincial entre Santa Fe y Entre Ríos?",
       "correctAnswer":"Paraná",
       "answerTip":"El río Paraná constituye un limite provincial entre Santa Fe y Entre Ríos. Tras el acuerdo celebrado entre representantes de Entre Ríos y de Santa Fe el 17 de marzo de 1969 en la ciudad de Santa Fe, con la anuencia de la Comisión Nacional de Límites Interprovinciales, ratificado por la ley provincial de Entre Ríos Nº 8855, el 5 de septiembre de 1979 fue sancionado y promulgado el decreto ley nacional N° 22067 que dispuso que el límite oeste se apoye en el canal de navegación del río Paraná.",
       "provinciaId":12,
@@ -954,7 +954,7 @@
     },
     {
       "id":119,
-      "question":"¿En cuál ciudad se encuentra el Aeropuerto Internacional Rosario \"Islas Malvinas\" antes conocido como \"Fisherton\"? ",
+      "question":"¿En qué ciudad se encuentra el Aeropuerto Internacional Rosario \"Islas Malvinas\" antes conocido como \"Fisherton\"?",
       "correctAnswer":"Rosario",
       "answerTip":"El Aeropuerto Internacional Rosario \"Islas Malvinas\" se encuentra ubicado al oeste de la ciudad de Rosario. Debe su nombre al reclamo argentino sobre las Islas Malvinas, ocupadas por el Reino Unido desde 1833.Es el aeropuerto mas ocupado de la Provincia de Santa Fe y el octavo mas grande de Argentina. Coordenadas  32°54′13″S 60°47′04″O",
       "provinciaId":12,
@@ -962,7 +962,7 @@
     },
     {
       "id":120,
-      "question":"¿Sobre la ribera de cuál río se encuentran ubicadas las Termas de Río Hondo?",
+      "question":"¿Sobre el margen de qué río se encuentran ubicada la ciudad de \"Las Termas de Río Hondo\"?",
       "correctAnswer":"Río Dulce",
       "answerTip":"Las Termas de Río Hondo se encuentran ubicadas sobre la ribera del Río Dulce. Es cabecera del departamento Río Hondo y principal centro termal del país ya que la misma se encuentra sobre una gran terma mineralizada que cubre 12 Km². Coordenadas: 27°29′00″S 64°52′00″O",
       "provinciaId":16,
@@ -978,7 +978,7 @@
     },
     {
       "id":122,
-      "question":"¿Sobre el margen derecho de que río se encuentra ubicada la ciudad de Santiago del Estero?",
+      "question":"¿Sobre el margen de que río se encuentra ubicada la ciudad de Santiago del Estero?",
       "correctAnswer":"Río Dulce",
       "answerTip":"La ciudad se sitúa sobre el margen derecho del río Dulce. Se extiende en una superficie de aproximadamente 4001,87 hectáreas, oficialmente dividida en 43 barrios ( 27º 47' 04´´ S y 64º 16´ 01´´ O.",
       "provinciaId":16,
@@ -986,7 +986,7 @@
     },
     {
       "id":123,
-      "question":"¿En cuántos departamentos está dividida la provincia de Santiago del Estero?  ",
+      "question":"¿En cuántos departamentos está dividida la provincia de Santiago del Estero?",
       "correctAnswer":"27",
       "answerTip":"La provincia cuenta dividida en 27 departamentso.Tiene una población de 896.461 habitantes, distribuida en una superficie de 136.351 km² (según censo 2010).",
       "provinciaId":16,
@@ -1002,7 +1002,7 @@
     },
     {
       "id":125,
-      "question":"¿Cuál provincia limita al sur de Santiago del Estero?",
+      "question":"¿Qué provincia limita al sur de Santiago del Estero?",
       "correctAnswer":"Córdoba",
       "answerTip":"La provincia de Santiago del Estero limita en su zona sur con Córdoba.",
       "provinciaId":16,
@@ -1010,8 +1010,8 @@
     },
     {
       "id":126,
-      "question":"¿Cuál es la superficie de Tierra del Fuego, Antártida e Islas del Atlántico Sur?",
-      "correctAnswer":"1.002.445 km²  ",
+      "question":"¿Cuál es la superficie de la provincia de Tierra del Fuego, Antártida e Islas del Atlántico Sur?",
+      "correctAnswer":"1.002.445 km²",
       "answerTip":"La superficie de Tierra del Fuego, Antártida e Islas del Atlántico Sur tiene es de 1.002.445 km².  Es la provincia con mayor extensión de la República Argentina.",
       "provinciaId":0,
       "provinciaName":"Tierra del Fuego, Antártida e Islas del Atlántico Sur"
@@ -1026,7 +1026,7 @@
     },
     {
       "id":128,
-      "question":"¿Cuáles son los nombres de las mayores islas que forman el archipiélago malvinero?",
+      "question":"¿Cuáles son los nombres de las mayores islas que forman el archipiélago malvinense?",
       "correctAnswer":"Gran Malvina y Soledad",
       "answerTip":"Los nombres de las Islas son Gran Malvina (4377Km²) y Soledad (6353 Km²) separadas por el estrecho de San Carlos, ubicadas en el Mar Argentino.",
       "provinciaId":0,
@@ -1036,7 +1036,7 @@
       "id":129,
       "question":"¿En cuantos departamentos se divide la provincia de Tierra del Fuego, Antártida e Islas del Atlántico Sur?",
       "correctAnswer":"4",
-      "answerTip":"La provincia se divide en 4 (cuatro) departamentos: Departamento Antártida Argentina, Departamento Islas del Atlántico Sur, Departamento Río Grande y Departamento Ushuaia.\n",
+      "answerTip":"La provincia se divide en 4 (cuatro) departamentos: Departamento Antártida Argentina, Departamento Islas del Atlántico Sur, Departamento Río Grande y Departamento Ushuaia.",
       "provinciaId":0,
       "provinciaName":"Tierra del Fuego, Antártida e Islas del Atlántico Sur"
     },
@@ -1050,7 +1050,7 @@
     },
     {
       "id":131,
-      "question":"¿De que idioma provienen la palabra \"Ushuaia\"?",
+      "question":"¿De qué idioma provienen la palabra \"Ushuaia\"?",
       "correctAnswer":"Yagán",
       "answerTip":"La palabra Ushuaia proviene del idioma yagán: ush ('al fondo') y waia ('bahía' o 'caleta') y significa 'bahía profunda o bahía al fondo.",
       "provinciaId":0,
@@ -1058,7 +1058,7 @@
     },
     {
       "id":132,
-      "question":"¿Con cuál seudónimo es conocida popularmente la provincia de Tucumán?",
+      "question":"¿Cómo es conocida popularmente la provincia de Tucumán?",
       "correctAnswer":"El Jardín de la República",
       "answerTip":"Tucumán es popularmente conocida con el seudónimo del “Jardín de la República”. La cantidad de precipitaciones da lugar a una zona de vegetación abundante que justifica que la provincia sea conocida con tal denominación.",
       "provinciaId":14,
@@ -1066,7 +1066,7 @@
     },
     {
       "id":133,
-      "question":"¿En la cima de cuál cerro argentino se encuentra la escultura denominada “El Cristo Bendicente” del artista Juan Carlos Iramain?",
+      "question":"¿En la cima de qué cerro se encuentra la escultura denominada “El Cristo Bendicente” del artista Juan Carlos Iramain?",
       "correctAnswer":"Cerro San Javier",
       "answerTip":"El Cristo Bendicente se encuentra en la cima del cerro San Javier, en Yerba Buena (provincia de Tucumán). Mide 28 metros de altura y levanta su brazo derecho en signo de bendición.",
       "provinciaId":14,
@@ -1090,15 +1090,15 @@
     },
     {
       "id":136,
-      "question":"¿Sobre cuál río se encuentra el dique El Cadillal?",
-      "correctAnswer":" Río Salí",
+      "question":"¿Sobre qué río se encuentra el dique El Cadillal?",
+      "correctAnswer":"Río Salí",
       "answerTip":"El Dique El Cadillal, oficialmente Dique Celestino Gelsi, se ubicada sobre el río Salí a unos 21 km de la ciudad de San Miguel de Tucumán.Coordenadas  26°36′58″S 65°11′34″O",
       "provinciaId":14,
       "provinciaName":"Tucumán"
     },
     {
       "id":137,
-      "question":"¿Cuál provincia limita al norte de Tucumán?",
+      "question":"¿Qué provincia limita al norte de la provincia de Tucumán?",
       "correctAnswer":"Salta",
       "answerTip":"Tucumán limita al norte con la provincia de Salta, al este y sur con Santiago del Estero y al oeste y sur con Catamarca. Su capital es la ciudad de San Miguel de Tucumán.",
       "provinciaId":14,
@@ -1106,12 +1106,12 @@
     }
   ],
   "options": [
-    ["Ciudad Autónoma Buenos Aires","La Plata","Lomas de Zamora"  ],
+    ["Ciudad de Buenos Aires","La Plata","Lomas de Zamora"  ],
     ["La Matanza","Lomas de Zamora","General San Martín"  ],
-    ["307.571 km² ","105.436 km²","517.865 km²"  ],
+    ["307.571 km²","105.436 km²","517.865 km²"  ],
     ["57","135","28"  ],
     ["15.625.084 habitantes","27.786.179 habitantes","93.567.864 habitantes"  ],
-    ["Napostá Grande","La Ventana ","Cerro Tres Picos"  ],
+    ["Napostá Grande","La Ventana","Cerro Tres Picos"  ],
     ["150,578","450,234","367,820"  ],
     ["45","18","36"  ],
     ["303.786 km²","102.602 km²","786.143 km²"  ],
@@ -1150,7 +1150,7 @@
     ["1966","1880","2004"  ],
     ["Uruguay","Paraguay","Brasil"  ],
     ["9","4","17"  ],
-    ["P.N. Pilcomayo","P.N. Los Glaciares","P.N. Los Alerces"  ],
+    ["P.N. Pilcomayo","P.N. Los Glaciares","P.N. Los Alerces."  ],
     ["Paraguay","Bermejo","Teuquito"  ],
     ["Pilcomayo","Bermejo","Paraguay"  ],
     ["Trópico de Capricornio","Trópico de Cáncer","Meridiano de Greenwich"  ],
@@ -1166,15 +1166,15 @@
     ["P.N. Perito Moreno","P.N. Nahuel Huapi","P.N. Lihuél Calel"  ],
     ["San Luis","Mendoza","Buenos Aires"  ],
     ["Caldén","Ombú","Ceibo"  ],
-    ["P.N. San Guillermo","P.N. Talampaya","P.N. Lihue Calel"  ],
+    ["P.N. San Guillermo","P.N. Talampaya","P.N. Lihuél Calel"  ],
     ["Dique de Anzulón","Dique Los Sauces","Dique de Chanianmuyo"  ],
-    ["Sierra de la Venta","Sierra de Velasco"," Sierras Mahuidas"  ],
+    ["Sierra de la Venta","Sierra de Velasco","Sierras Mahuidas"  ],
     ["Nogal","La vid","Olivo"  ],
     ["Perú","Bolivia","Chile"  ],
     ["4","2","8"  ],
     ["Uruguay","Bolivia","Chile"  ],
     ["8","1","4"  ],
-    ["Del Olivo","De la Vendimia.","Del Tomate"  ],
+    ["Del Olivo","De la Vendimia","Del Tomate"  ],
     ["Las Leñas","Chapelco","Catedral"  ],
     ["Termas de Cacheurta","Termas de Reyes","Villavicencio"  ],
     ["6959 metros","8848 metros","6960,8 metros"  ],
@@ -1184,21 +1184,21 @@
     ["1","3","2"  ],
     ["Río Bermejo","Río Iguazú","Río Pilcomayo"  ],
     ["Paraná","Iguazú","Pilcomayo"  ],
-    ["3776 msnm","6960,8 msnm","8848 msnm"  ],
+    ["3728 msnm","6960,8 msnm","8848 msnm"  ],
     ["Chile","Perú","Bolivia"  ],
     ["1","3","9"  ],
-    ["mapuche","quichua","guaraní"  ],
+    ["Mapuche","Quichua","Guaraní"  ],
     ["Río Negro","Mendoza","San Juan"  ],
     ["Volcán Domuyo","Cerro Guañacó","Volcán Tromen"  ],
-    ["General Roca ","Cipolletti","Viedma"  ],
-    ["Villa Regina ","General Roca ","Cipolletti"  ],
-    ["P.N. Los Arrayanes ","P.N. Lanín ","P.N. Nahuel Huapi"  ],
-    ["Golfo San Matías ","Península Valdez ","Golfo San Jorge"  ],
-    ["Río Negro ","Río Colorado ","Río Limay"  ],
-    ["Tronador ","Campanario"," López"  ],
-    ["Olacapato","Iruya","Humahuaca "  ],
+    ["General Roca","Cipolletti","Viedma"  ],
+    ["Villa Regina","General Roca","Cipolletti"  ],
+    ["P.N. Los Arrayanes","P.N. Lanín","P.N. Nahuel Huapi"  ],
+    ["Golfo San Matías","Península Valdez","Golfo San Jorge"  ],
+    ["Río Negro","Río Colorado","Río Limay"  ],
+    ["Monte Tronador","Cerro Campanario","Cerro López"  ],
+    ["Olacapato","Iruya","Humahuaca"  ],
     ["1","3","6"  ],
-    ["El Jardín de la República","La Linda","La tacita de Plata"  ],
+    ["El Jardín de la República","La Linda","La Tacita de Plata"  ],
     ["Cerro San Bernardo","Cerro San Javier","Cerro Aconcagua"  ],
     ["Río Colorado","Río Juramento","Río Negro"  ],
     ["Jujuy","Chaco","Tucumán"  ],
@@ -1212,7 +1212,7 @@
     ["Desaguadero","Conlara","Quinto"  ],
     ["La Rioja","Santa Cruz","Buenos Aires"  ],
     ["1","5","10"  ],
-    ["Merlo","San Luis Capital","Luján"  ],
+    ["Ciudad Villa de Merlo","San Luis Capital","Luján"  ],
     ["Villa Giardino","Potrero de los Funes","Santa Rosa del Conlara"  ],
     ["Río Gallegos","Caleta Olivia","Rawson"  ],
     ["Río Pinturas","Río Salado","Río Colorado"  ],
@@ -1220,7 +1220,7 @@
     ["250 Km²","700 Km²","1050 Km²"  ],
     ["1981","1937","2001"  ],
     ["Chubut","Río Negro","Tucumán"  ],
-    ["Santa Fe de la Veracruz","Rosario","Vera"  ],
+    ["Santa Fe","Rosario","Vera"  ],
     ["Rosario","9 de Julio","San Cristóbal"  ],
     ["6","1","9"  ],
     ["Paraná","Uruguay","Salado"  ],
