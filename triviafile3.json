@@ -195,8 +195,8 @@
     {
       "id":24,
       "question":"¿Cuál es la cota del Cerro Uritorco?",
-      "correctAnswer":"1949 msnm",
-      "answerTip":"El cerro Uritorco tiene una altura de 1949 msnm y esta situado en el norte del Valle de Punilla, próximo a Capilla del Monte. Coordenadas  30°50′39″S 64°28′34″O",
+      "correctAnswer":"1950 msnm",
+      "answerTip":"El cerro Uritorco tiene una altura de 1950 msnm y esta situado en el norte del Valle de Punilla, próximo a Capilla del Monte. Coordenadas  30°50′39″S 64°28′34″O",
       "provinciaId":10,
       "provinciaName":"Córdoba"
     },
@@ -220,7 +220,7 @@
       "id":27,
       "question":"¿En que localidad se celebra la Fiesta Provincial del \"Salame Casero\" ?",
       "correctAnswer":"Colonia Caroya",
-      "answerTip":"La Fiesta Provincial del Salame Casero se celebrá en la localidad de Colonia Caroya. Tiene lugar durante la primera quincena del mes de Octubre. Se llevó a cabo por primera vez en septiembre de 1979 con el fin de mantener vigente la tradición friulana y la indiscutida popularidad del salame de Colonia Caroya. Coordenadas: 31°02′0″S 64°5′36″O",
+      "answerTip":"La Fiesta Provincial del Salame Casero se celebra en la localidad de Colonia Caroya. Tiene lugar durante la primera quincena del mes de Octubre. Se llevó a cabo por primera vez en septiembre de 1979 con el fin de mantener vigente la tradición friulana y la indiscutida popularidad del salame de Colonia Caroya. Coordenadas: 31°02′0″S 64°5′36″O",
       "provinciaId":10,
       "provinciaName":"Córdoba"
     },
@@ -244,7 +244,7 @@
       "id":30,
       "question":"¿Cuál es el idioma oficial alternativo de la provincia de Corrientes?",
       "correctAnswer":"Guaraní",
-      "answerTip":"El gobierno correntino declaró en 2004 el guaraní correntino como \"idioma oficial alternativo\" de la provincia, junto con el español. Hasta 2010 fue la única provincia con ese estatus, al sumársele la Provincia del Chaco",
+      "answerTip":"El gobierno correntino declaró en 2004 el guaraní correntino como \"idioma oficial alternativo\" de la provincia, junto con el español. Hasta 2010 fue la única provincia con ese estatus, al sumársele la provincia del Chaco",
       "provinciaId":15,
       "provinciaName":"Corrientes"
     },
@@ -676,7 +676,7 @@
       "id":84,
       "question":"¿Cómo se llama la capital de la provincia de Río Negro?",
       "correctAnswer":"Viedma",
-      "answerTip":"La capital de la provincia de Río Negro se la denomina Viedma. Es la ciudad capital  y cabecera del departamento Adolfo Alsina. Se sitúa al este de la provincia, en la margen derecha del tramo final del río Negro. Coordenadas: 40°48′S 63°00′O",
+      "answerTip":"La capital de la provincia de Río Negro se la denomina Viedma. Es la ciudad capital y cabecera del departamento Adolfo Alsina. Se sitúa al este de la provincia, en la margen derecha del tramo final del río Negro. Coordenadas: 40°48′S 63°00′O",
       "provinciaId":4,
       "provinciaName":"Río Negro"
     },
@@ -684,7 +684,7 @@
       "id":85,
       "question":"¿En qué ciudad se celebra la Fiesta Nacional de la Manzana?",
       "correctAnswer":"General Roca",
-      "answerTip":"La Fiesta Nacional de la Manzana se celebra ebn la ciudad de General Roca. Se realiza cada año en el mes de febrero en homenaje al fruto del manzano y a los fruticultores de la zona. Tiene una duración de cinco días. Se llevan a cabo espectáculos culturales, musicales, artísticos y concursos. Coordenadas: 39°02′00″S 67°35′00″O",
+      "answerTip":"La Fiesta Nacional de la Manzana se celebra en la ciudad de General Roca. Se realiza cada año en el mes de febrero en homenaje al fruto del manzano y a los fruticultores de la zona. Tiene una duración de cinco días. Se llevan a cabo espectáculos culturales, musicales, artísticos y concursos. Coordenadas: 39°02′00″S 67°35′00″O",
       "provinciaId":4,
       "provinciaName":"Río Negro"
     },
@@ -692,7 +692,7 @@
       "id":86,
       "question":"¿Qué Parque Nacional comparte Río Negro con la provincia del Neuquén?",
       "correctAnswer":"P.N. Nahuel Huapi",
-      "answerTip":"El parque nacional Nahuel Huapi es compartido con la provincia de Neuquén.Se ubica al sudoeste de la provincia del Neuquén y al oeste de la de Río Negro. El área tiene un total de 709.474 hectáreas y es el más antiguo de los parques nacionales, ya que fue creado por el gobierno argentino en el año 1934. Coordenadas  41°08′S 71°17′O",
+      "answerTip":"El parque nacional Nahuel Huapi es compartido con la provincia del Neuquén. Se ubica al sudoeste de la provincia del Neuquén y al oeste de la de Río Negro. El área tiene un total de 709.474 hectáreas y es el más antiguo de los parques nacionales, ya que fue creado por el gobierno argentino en el año 1934. Coordenadas  41°08′S 71°17′O",
       "provinciaId":4,
       "provinciaName":"Río Negro"
     },
@@ -1130,7 +1130,7 @@
     ["1999","1981","2003"  ],
     ["Posadas","Rawson","Trelew"  ],
     ["Trelew","Puerto Madryn","Comodoro Rivadavia"  ],
-    ["1949 msnm","2250 msnm","6080 msnm"  ],
+    ["1950 msnm","2250 msnm","6080 msnm"  ],
     ["3","5","7"  ],
     ["26","12","38"  ],
     ["Colonia Caroya","Alta Gracia","Villa Dolores"  ],
